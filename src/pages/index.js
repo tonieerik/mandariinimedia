@@ -1,22 +1,61 @@
 import React from "react"
-import { Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
+import Intro from "../components/intro"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Portfolio from "../components/portfolio"
+import WhatIDo from "../components/whatido"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      sceneryImage: file(relativePath: { eq: "maisema.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      sceneryImageMobile: file(relativePath: { eq: "maisema-mobile.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1200) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
+  const breakpoints = useBreakpoint()
+
+  return (
+    <Layout>
+      <SEO title="Mandariinimedia" />
+
+      <Intro />
+
+      <section
+        className={`bg-teal flex justify-center items-center text-gray-100 font-bold tracking-wider ${
+          breakpoints.md ? "h-32 text-xl px-10" : "h-64 text-2xl"
+        }`}
+      >
+        <i>Oivaltava viestintä vakuuttaa, vaikuttaa ja valloittaa.</i>
+      </section>
+
+      <WhatIDo />
+
+      {breakpoints.md ? (
+        <Img fluid={data.sceneryImageMobile.childImageSharp.fluid} />
+      ) : (
+        <Img fluid={data.sceneryImage.childImageSharp.fluid} />
+      )}
+
+      <Portfolio />
+    </Layout>
+  )
+}
 
 export default IndexPage

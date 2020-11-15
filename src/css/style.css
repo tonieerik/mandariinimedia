@@ -1,0 +1,61 @@
+/*! purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/*! purgecss end ignore */
+@tailwind utilities;
+
+@import url("//fonts.googleapis.com/css2?family=Dosis&family=Titillium+Web:wght@200;400&display=swap");
+
+div {
+  font-family: "Titillium web", sans-serif;
+}
+
+.bg-orange {
+  background-color: #ffb427;
+}
+
+.bg-teal {
+  background-color: #6dd9c9;
+}
+
+.text-teal {
+  color: #6dd9c9;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.mobileHeaderImage {
+  height: 45vh;
+}
+
+.ipadHeaderImage {
+  height: 60vh;
+}
+
+li {
+  overflow: hidden;
+  list-style: none;
+  white-space: nowrap;
+  display: inline-block;
+}
+li span {
+  opacity: 0;
+  max-width: 0;
+  display: inline-block;
+  text-decoration: none;
+  transition: max-width 0.1s ease-out, opacity 0.1s ease-out;
+}
+ul:hover span {
+  opacity: 1;
+  max-width: 250px;
+  transition: max-width 0.5s ease-out, opacity 1s ease-out;
+}
+li:hover + .icon {
+  transform: scale(1.2);
+  transition: 0.5s ease-out;
+}
