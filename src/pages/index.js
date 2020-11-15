@@ -32,6 +32,13 @@ const IndexPage = () => {
   const breakpoints = useBreakpoint()
 
   return (
+    <div>
+      <br />
+      <center>SIVUSTO ON RAKENTEILLA</center>
+    </div>
+  )
+  /*
+  return (
     <Layout>
       <SEO title="Mandariinimedia" />
 
@@ -56,6 +63,7 @@ const IndexPage = () => {
       <Portfolio />
     </Layout>
   )
+  */
 }
 
 export default IndexPage
