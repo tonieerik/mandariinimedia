@@ -11,7 +11,7 @@ const Content = () => {
         breakpoints.md ? "flex-col" : "flex-row"
       }`}
     >
-      <div className={`${mx} ${breakpoints.md ? "mt-8 mb-6" : "my-12"}`}>
+      <div className={`${mx} ${breakpoints.md ? "mt-8 mb-6" : "my-12 w-1/3"}`}>
         <h2 className="text-teal text-xl font-bold">Toimitustyö</h2>
         <p>
           Rakastan kertoa tarinoita – niin pieniä kuin suuriakin. Toimittajan
@@ -26,23 +26,24 @@ const Content = () => {
           ammattilaisena otan kuitenkin haltuun minkä tahansa aiheen.
         </p>
       </div>
-      <div className={`${mx} ${breakpoints.md ? "my-0" : "my-12"}`}>
+      <div className={`${mx} ${breakpoints.md ? "my-0" : "my-12 w-1/3"}`}>
         <h2 className="text-teal text-xl font-bold">Sisällöntuotanto</h2>
         <p>
-          Sisällöntuotanto voi olla vaikka mitä aina somepostauksista
-          blogiteksteihin ja verkkosivuista mainosmateriaaleihin. Tunnen eri
-          viestintäkanavat, tekstilajit sekä niiden käytänteet, joten kynästäni
-          syntyy vaikuttavaa viestintää erilaisiin tarpeisiin.
+          Sisällöntuotanto on vaikuttavaa viestintää, ja se voi olla vaikka mitä
+          aina somepostauksista blogiteksteihin ja verkkosivuista
+          mainosmateriaaleihin. Koukuttavan sisällön tavoitteena on herättää
+          kohderyhmän mielenkiinto sekä puhutella ja sitouttaa asiakkaita.
         </p>
         <p>
           Urani aikana olen kirjoittanut blogiartikkeleita muun muassa
           yritysmaailmasta ja kirjallisuudesta, suunnitellut ja toteuttanut
           sadoittain postauksia eri organisaatioiden sosiaalisen median kanaviin
-          ja työstänyt uutiskirjeitä laidasta laitaan. Innostun tekemään
-          koukuttavaa sisältöä aiheesta kuin aiheesta.
+          ja työstänyt uutiskirjeitä laidasta laitaan. Tunnen eri
+          viestintäkanavat, tekstilajit sekä niiden käytänteet, joten kynästäni
+          syntyy vaikuttavaa viestintää erilaisiin tarpeisiin.
         </p>
       </div>
-      <div className={`${mx} ${breakpoints.md ? "my-4" : "my-12"}`}>
+      <div className={`${mx} ${breakpoints.md ? "my-4" : "my-12 w-1/3"}`}>
         <h2 className="text-teal text-xl font-bold">Kielenhuolto</h2>
         <p>
           Oikeakielinen kirjoitusasu on merkki kirjoittajan asiantuntemuksesta.

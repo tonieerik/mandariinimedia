@@ -12,7 +12,7 @@ const Header = () => {
     query {
       nelliImage: file(relativePath: { eq: "nelli.png" }) {
         childImageSharp {
-          fluid(maxWidth: 2000) {
+          fluid(quality: 90, maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -77,9 +77,11 @@ const Header = () => {
           <Img fluid={data.nelliImage.childImageSharp.fluid} />
         </div>
         <div className="flex flex-col justify-end w-1/2 pb-12">
-          <div className="text-2xl font-bold">NELLI LEPPÄNEN</div>
+          <div className="text-3xl font-bold">NELLI LEPPÄNEN</div>
           <br />
-          <div>vapaa kirjoittaja ja viestinnän ammattilainen</div>
+          <div className="text-xl">
+            vapaa kirjoittaja ja viestinnän ammattilainen
+          </div>
         </div>
       </div>
     )

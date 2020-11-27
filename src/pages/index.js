@@ -14,14 +14,14 @@ const IndexPage = () => {
     query {
       sceneryImage: file(relativePath: { eq: "maisema.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1600) {
+          fluid(quality: 90, maxWidth: 1600) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       sceneryImageMobile: file(relativePath: { eq: "maisema-mobile.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 1200) {
+          fluid(quality: 90, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -31,13 +31,14 @@ const IndexPage = () => {
 
   const breakpoints = useBreakpoint()
 
+  /*
   return (
     <div>
       <br />
       <center>SIVUSTO ON RAKENTEILLA</center>
     </div>
   )
-  /*
+  */
   return (
     <Layout>
       <SEO title="Mandariinimedia" />
@@ -63,7 +64,6 @@ const IndexPage = () => {
       <Portfolio />
     </Layout>
   )
-  */
 }
 
 export default IndexPage
