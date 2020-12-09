@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Mandariinimedia`,
+    title: `Valloittavaa viestintää`,
     description: `Oivaltava viestintä vakuuttaa, vaikuttaa ja valloittaa`,
     author: `@gatsbyjs`,
   },
