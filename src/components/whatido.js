@@ -15,48 +15,57 @@ const Content = () => {
         <h2 className="text-teal text-xl font-bold">Toimitustyö</h2>
         <p>
           Rakastan kertoa tarinoita – niin pieniä kuin suuriakin. Toimittajan
-          saappaissa kirjoitan yhtä lailla sykähdyttäviä henkilötarinoita kuin
-          asiallisia artikkeleita. Kirjoittajana toteutan myös informatiivisia
-          tiedotteita, teräviä uutisia ja houkuttelevia advertoriaaleja.
+          saappaissa haastattelen, pengon ja etsin kiinnostavia näkökulmia.
+          Tarkastelen maailmaa uteliaasti ja tutustun uusiin ihmisiin avoimin
+          mielin. Minkä tahansa aiheen voi saada eloon, kun sen pukee
+          kiehtovaksi tarinaksi. Kirjoittajana on parasta, jos lukijan suu
+          kääntyy hymyyn tai silmäkulma kostuu. Silloin teksti herättää
+          tunteita.
         </p>
         <p>
-          Intohimon kohteitani ovat erityisesti luonto ja retkeily, kestävä
-          kehitys ja ekologinen matkailu sekä terveys ja hyvinvointi. Näistä
-          aiheista kirjoitan enemmän kuin mielelläni. Kirjoittamisen
-          ammattilaisena otan kuitenkin haltuun minkä tahansa aiheen.
+          Henkilökohtaisia intohimojani ovat luonto ja retkeily, kestävä kehitys
+          ja ekologinen matkailu sekä terveys ja hyvinvointi. Näistä aiheista
+          kirjoitan enemmän kuin mielelläni. Kirjoittamisen ammattilaisena otan
+          kuitenkin haltuun aiheen kuin aiheen. Kirjoitan yhtä lailla
+          sykähdyttäviä henkilötarinoita kuin asiallisia artikkeleita.
         </p>
       </div>
       <div className={`${mx} ${breakpoints.md ? "my-0" : "my-12 w-1/3"}`}>
         <h2 className="text-teal text-xl font-bold">Sisällöntuotanto</h2>
         <p>
-          Sisällöntuotanto on vaikuttavaa viestintää, ja se voi olla vaikka mitä
-          aina somepostauksista blogiteksteihin ja verkkosivuista
-          mainosmateriaaleihin. Koukuttavan sisällön tavoitteena on herättää
-          kohderyhmän mielenkiinto sekä puhutella ja sitouttaa asiakkaita.
+          Sisällöntuotanto voi olla vaikka mitä aina somepostauksista
+          blogiteksteihin ja verkkosivuista markkinointimateriaaleihin. Haluan
+          tuottaa asiakkaalle lisäarvoa kirjoittamalla, ja siksi toteutan
+          mielelläni esimerkiksi houkuttelevia yritystarinoita ja
+          asiakasreferenssejä. Tunnen eri viestintäkanavat ja tekstilajit kuin
+          omat taskuni, joten kynästäni syntyy vaikuttavaa viestintää erilaisiin
+          tarpeisiin.
         </p>
         <p>
           Urani aikana olen kirjoittanut blogiartikkeleita muun muassa
           yritysmaailmasta ja kirjallisuudesta, suunnitellut ja toteuttanut
           sadoittain postauksia eri organisaatioiden sosiaalisen median kanaviin
-          ja työstänyt uutiskirjeitä laidasta laitaan. Tunnen eri
-          viestintäkanavat, tekstilajit sekä niiden käytänteet, joten kynästäni
-          syntyy vaikuttavaa viestintää erilaisiin tarpeisiin.
+          ja työstänyt uutiskirjeitä laidasta laitaan. Kielen ammattilaisena
+          toteutan innostavaa sisältöä aiheesta riippumatta.
         </p>
       </div>
       <div className={`${mx} ${breakpoints.md ? "my-4" : "my-12 w-1/3"}`}>
         <h2 className="text-teal text-xl font-bold">Kielenhuolto</h2>
         <p>
           Oikeakielinen kirjoitusasu on merkki kirjoittajan asiantuntemuksesta.
-          Kun kieli soljuu sujuvasti eteenpäin, sitä on miellyttävää lukea.
-          Samalla viestikin menee tehokkaasti perille. Siksi pidän tärkeänä,
-          että kieli ei vilise mitä sattuu vaan saa lukijan nyökyttelemään
-          tyytyväisenä.
+          Samalla tekstin sanomakin menee tehokkaasti perille. Kun kieli soljuu
+          sujuvasti eteenpäin, sitä on miellyttävää lukea. Kielenkäytön ohjeet
+          ja suositukset ovatkin sitä varten, että teksti ei vilise mitä sattuu
+          lipsahduksia vaan saa lukijan nyökyttelemään tyytyväisenä. Niin
+          sanotun punakynän ei ole tarkoitus moittia kirjoittajaa vaan opastaa
+          lempeästi.
         </p>
         <p>
-          Kielenhuoltajana olen tarkastanut muun muassa tietokirjojen
+          Kielenhuoltajana olen tarkastanut lukuisia tietokirjojen
           käsikirjoituksia, väitöskirjoja ja lyhyempiä tekstejä laidasta
-          laitaan. Hyppysissäni jokaisesta tekstistä tulee ymmärrettävä ja
-          helppolukuinen, eikä se tukehdu jargoniin tai kielioppivirheisiin.
+          laitaan. Koska kielenhuoltaja on lukijan edunvalvoja, hyppysissäni
+          jokaisesta tekstistä tulee ymmärrettävä ja helppolukuinen, eikä se
+          tukehdu jargoniin tai kielioppivirheisiin.
         </p>
       </div>
     </div>

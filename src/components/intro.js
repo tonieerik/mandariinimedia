@@ -6,13 +6,23 @@ const Content = () => (
     <p className="mb-4">
       Olen Nelli, seikkailunhaluinen tarinankertoja ja loputtoman utelias
       sisällöntuottaja. Jutuillani haluan innostaa, koskettaa ja herättää
-      oivalluksia. Sytyn eloisasta kielenkäytöstä, joka pitää lukijan otteessaan
-      viimeiseen pisteeseen saakka.
+      oivalluksia. Sytyn eloisasta ja nokkelasta kielenkäytöstä, joka pitää
+      lukijan otteessaan viimeiseen pisteeseen saakka.
+    </p>
+    <p className="mb-4">
+      Urallani olen työskennellyt viestinnän kentällä niin toimittajana,
+      tiedottajana, viestintäsuunnittelijana, sisällöntuottajana kuin
+      kielenhuoltajana. Jos jotain olen vuosien varrella oppinut, niin sen, että
+      viestinnällä todellakin on väliä. Sillä voi vakuuttaa, vaikuttaa ja
+      valloittaa.
     </p>
     <p className="mb-4">
       Kaipaatpa sitten kutkuttavan artikkelin rustaajaa, napakoiden
       somesisältöjen tekijää tai asiantuntevaa kielenhuoltajaa, olen sinua
-      varten. Ota yhteyttä, niin rupatellaan ihmeessä lisää.
+      varten. Ota yhteyttä, niin rupatellaan ihmeessä lisää. Kaipaatpa sitten
+      kutkuttavan artikkelin rustaajaa, napakoiden somesisältöjen tekijää tai
+      asiantuntevaa kielenhuoltajaa, olen sinua varten. Ota yhteyttä, niin
+      rupatellaan ihmeessä lisää.
     </p>
   </>
 )
