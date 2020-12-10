@@ -19,10 +19,7 @@ const Content = () => (
     <p className="mb-4">
       Kaipaatpa sitten kutkuttavan artikkelin rustaajaa, napakoiden
       somesisältöjen tekijää tai asiantuntevaa kielenhuoltajaa, olen sinua
-      varten. Ota yhteyttä, niin rupatellaan ihmeessä lisää. Kaipaatpa sitten
-      kutkuttavan artikkelin rustaajaa, napakoiden somesisältöjen tekijää tai
-      asiantuntevaa kielenhuoltajaa, olen sinua varten. Ota yhteyttä, niin
-      rupatellaan ihmeessä lisää.
+      varten. Ota yhteyttä, niin rupatellaan ihmeessä lisää.
     </p>
   </>
 )
