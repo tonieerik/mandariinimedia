@@ -1,13 +1,15 @@
 module.exports = {
   siteMetadata: {
     title: `Valloittavaa viestintää`,
-    description: `Oivaltava viestintä vakuuttaa, vaikuttaa ja valloittaa`,
+    description: `Vapaa kirjoittaja ja viestinnän ammattilainen. Teen valloittavaa viestintää, jonka sanoma pirskahtelee kauas.`,
     author: `@gatsbyjs`,
+    siteUrl: `https://mandariinimedia.fi`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-plugin-breakpoints`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -79,28 +79,28 @@ const Content = () => {
           <div className="lg:mt-8 lg:ml-4 mb-4 lg:pl-8 lg:w-1/2">
             {!breakpoints.md && (
               <img
-                src="https://www.tuumakustannus.fi/kampanjakuvat/Luku5_Priorisointi_kiireTitanicilla.jpg"
-                alt="Kuvituskuva, businessillustrator.com"
+                src="https://tyoelama-duunitori.imgix.net/wp-content/uploads/2020/12/hanna-tim.jpg?auto=format&crop=faces&fit=crop&h=1260&w=2400"
+                alt="Tim De Maziere ja Hanna Vartia"
                 className="h-56"
               />
             )}
             <p className="mb-2 text-md font-bold">
               <a
                 className="underline"
-                href="https://www.tuumakustannus.fi/artikkelit/nokkelakuvitus"
+                href="https://duunitori.fi/tyoelama/pakuelama-toissa-tien-paalla"
                 target="_blank"
                 rel="noreferrer"
               >
-                Tuuma: Mieluummin vähän raffi kuin liian sliipattu &ndash;
-                nokkela kuvitus saa aivot raksuttamaan
+                Duunitori: Hannan ja Timin seikkailusta tuli elämäntapa &ndash;
+                pakettiauto on ollut jo vuosia koti ja työpaikka
               </a>
             </p>
             <p className="text-sm">
-              Kuvittajan työ ei ole vain viivojen sutimista oikeisiin paikkoihin
-              vaan tiukkaa ajatustyötä. Tylsänkin asian voi selittää oivaltavan
-              kuvan avulla fiksusti, uskoo kuvittaja Virpi Oinonen. Hän osaa
-              kiteyttää abstraktin aiheen niin, että se jää takuulla katsojan
-              mieleen.
+              Elämää ei ole tehty hukattavaksi vain toimistossa istumiseen,
+              uskovat Hanna Vartia ja Tim De Maziere. Suomalais-belgialainen
+              pariskunta toteutti haaveensa ja lähti seikkailemaan ympäri
+              Eurooppaa omalla reissupakullaan. Spontaanista seikkailusta
+              muodostui nopeasti elämäntapa, jolle ei näy loppua.
             </p>
           </div>
           <div className="lg:mt-8 lg:ml-4 mb-4 lg:pl-8 lg:w-1/2">
