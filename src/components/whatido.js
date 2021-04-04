@@ -1,71 +1,123 @@
 import React from "react"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
-const Content = () => {
+const Content = () => (
+  <div className={`bg-white px-8 flex flex-col`}>
+    <Content1 />
+    <Content2 />
+  </div>
+)
+
+const Content1 = () => {
   const breakpoints = useBreakpoint()
   const mx = breakpoints.md ? "mx-0" : "mx-8"
 
   return (
     <div
-      className={`bg-white px-8 flex ${
-        breakpoints.md ? "flex-col" : "flex-row"
-      }`}
+      className={`bg-white flex ${breakpoints.md ? "flex-col" : "flex-row"}`}
     >
-      <div className={`${mx} ${breakpoints.md ? "mt-8 mb-6" : "my-12 w-1/3"}`}>
+      <div className={`${mx} ${breakpoints.md ? "mt-8 mb-2" : "mt-12 w-1/2"}`}>
         <h2 className="text-teal text-xl font-bold">Toimitustyö</h2>
         <p>
-          Rakastan kertoa tarinoita – niin pieniä kuin suuriakin. Toimittajan
-          saappaissa haastattelen, pengon ja etsin kiinnostavia näkökulmia.
-          Tarkastelen maailmaa uteliaasti ja tutustun uusiin ihmisiin avoimin
-          mielin. Minkä tahansa aiheen voi saada eloon, kun sen pukee
-          kiehtovaksi tarinaksi. Kirjoittajana on parasta, jos lukijan suu
-          kääntyy hymyyn tai silmäkulma kostuu. Silloin teksti herättää
-          tunteita.
+          Kaipaatko sykähdyttävän henkilöjutun tai asiallisen artikkelin
+          kirjoittajaa? Toimittajan saappaissa etsin kiinnostavia näkökulmia ja
+          tarkastelen maailmaa uteliaasti. Ennen kaikkea rakastan
+          tarinankerrontaa. Siksi uskon, että minkä tahansa aiheen voi saada
+          eloon, kun sen pukee koukuttavaksi tarinaksi. Parhaimmillaan lukijan
+          suu kääntyy hymyyn tai silmäkulma kostuu. Silloin teksti saa
+          liikkeelle jotain sanoja suurempaa: se herättää tunteita.
         </p>
         <p>
-          Henkilökohtaisia intohimojani ovat luonto ja retkeily, kestävä kehitys
-          ja ekologinen matkailu sekä terveys ja hyvinvointi. Näistä aiheista
-          kirjoitan enemmän kuin mielelläni. Kirjoittamisen ammattilaisena otan
-          kuitenkin haltuun aiheen kuin aiheen. Kirjoitan yhtä lailla
-          sykähdyttäviä henkilötarinoita kuin asiallisia artikkeleita.
+          Toimittajana kirjoitan
+          <ul>
+            <li>henkilöjutut</li>
+            <li>artikkelit</li>
+            <li>reportaasit</li>
+            <li>uutiset</li>
+            <li>kolumnit</li>
+            <li>referaatit</li>
+            <li>raportit.</li>
+          </ul>
         </p>
       </div>
-      <div className={`${mx} ${breakpoints.md ? "my-0" : "my-12 w-1/3"}`}>
+      <div className={`${mx} ${breakpoints.md ? "my-4" : "mt-12 w-1/2"}`}>
         <h2 className="text-teal text-xl font-bold">Sisällöntuotanto</h2>
         <p>
-          Sisällöntuotanto voi olla vaikka mitä aina somepostauksista
-          blogiteksteihin ja verkkosivuista markkinointimateriaaleihin. Haluan
-          tuottaa asiakkaalle lisäarvoa kirjoittamalla, ja siksi toteutan
-          mielelläni esimerkiksi houkuttelevia yritystarinoita ja
-          asiakasreferenssejä. Tunnen eri viestintäkanavat ja tekstilajit kuin
-          omat taskuni, joten kynästäni syntyy vaikuttavaa viestintää erilaisiin
-          tarpeisiin.
+          Haluatko tuottaa asiakkaallesi lisäarvoa informatiivisilla,
+          houkuttelevilla ja viihdyttävillä tekstisisällöillä? Mikä tahansa
+          teksti palvelee parhaiten yrityksesi tarpeita, kun se on laadukas,
+          brändisi mukainen ja hakukoneoptimoitu. Sisällöntuottajana toteutan
+          sellaisia tekstejä, jotka tuovat ulottuvillesi uusia asiakkaita ja
+          saavat heidät sitoutumaan yritykseesi. Kynästäni syntyy vaikuttavaa
+          viestintää eri viestintäkanaviin ja tarpeisiin.
         </p>
         <p>
-          Urani aikana olen kirjoittanut blogiartikkeleita muun muassa
-          yritysmaailmasta ja kirjallisuudesta, suunnitellut ja toteuttanut
-          sadoittain postauksia eri organisaatioiden sosiaalisen median kanaviin
-          ja työstänyt uutiskirjeitä laidasta laitaan. Kielen ammattilaisena
-          toteutan innostavaa sisältöä aiheesta riippumatta.
+          Sisällöntuottajana toteutan
+          <ul>
+            <li>blogiartikkelit</li>
+            <li>somejulkaisut</li>
+            <li>yritystarinat</li>
+            <li>asiakasreferenssit</li>
+            <li>tiedotteet</li>
+            <li>uutiskirjeet</li>
+            <li>verkkosivutekstit.</li>
+          </ul>
         </p>
       </div>
-      <div className={`${mx} ${breakpoints.md ? "my-4" : "my-12 w-1/3"}`}>
-        <h2 className="text-teal text-xl font-bold">Kielenhuolto</h2>
+    </div>
+  )
+}
+
+const Content2 = () => {
+  const breakpoints = useBreakpoint()
+  const mx = breakpoints.md ? "mx-0" : "mx-8"
+
+  return (
+    <div
+      className={`bg-white flex ${breakpoints.md ? "flex-col" : "flex-row"}`}
+    >
+      <div className={`${mx} ${breakpoints.md ? "mb-4" : "my-12 w-1/2"}`}>
+        <h2 className="text-teal text-xl font-bold">Copywriting</h2>
         <p>
-          Oikeakielinen kirjoitusasu on merkki kirjoittajan asiantuntemuksesta.
-          Samalla tekstin sanomakin menee tehokkaasti perille. Kun kieli soljuu
-          sujuvasti eteenpäin, sitä on miellyttävää lukea. Kielenkäytön ohjeet
-          ja suositukset ovatkin sitä varten, että teksti ei vilise mitä sattuu
-          lipsahduksia vaan saa lukijan nyökyttelemään tyytyväisenä. Niin
-          sanotun punakynän ei ole tarkoitus moittia kirjoittajaa vaan opastaa
-          lempeästi.
+          Oletko vailla ratkaisukeskeisiä tekstejä, joiden myötä asiakkaasi
+          ryhtyy tekemään jotain, kuten ostaa tuotteesi tai palvelusi? Haluatko
+          takoa pelkästään tekstisisällöillä lisää tulosta? Copywriterina teen
+          syvällistä taustatyötä, jotta opin tuntemaan asiakkaasi aivoitukset ja
+          mieltymykset. Yhdistän tekstiin kuin tekstiin myynnin ja ihmisen
+          psykologian kulmakiviä. Tavoitteenani on kasvattaa yrityksesi myyntiä
+          tuloksellisten tekstien avulla.
         </p>
         <p>
-          Kielenhuoltajana olen tarkastanut lukuisia tietokirjojen
-          käsikirjoituksia, väitöskirjoja ja lyhyempiä tekstejä laidasta
-          laitaan. Koska kielenhuoltaja on lukijan edunvalvoja, hyppysissäni
-          jokaisesta tekstistä tulee ymmärrettävä ja helppolukuinen, eikä se
-          tukehdu jargoniin tai kielioppivirheisiin.
+          Copywriterina tuotan
+          <ul>
+            <li>mainokset</li>
+            <li>myyntitekstit</li>
+            <li>advertoriaalit</li>
+            <li>laskeutumissivut</li>
+            <li>markkinointimateriaalit.</li>
+          </ul>
+        </p>
+      </div>
+      <div className={`${mx} ${breakpoints.md ? "my-4" : "my-12 w-1/2"}`}>
+        <h2 className="text-teal text-xl font-bold">Kielenhuolto</h2>
+        <p>
+          Tahdotko tekstistäsi ymmärrettävän ja helppolukuisen – sellaisen, joka
+          saa vastaanottajan nyökyttelemään tyytyväisenä? Kielenhuoltajana
+          vastaan siitä, ettei tekstisi tukehdu jargoniin tai
+          kielioppivirheisiin vaan soljuu sujuvasti eteenpäin. Oikeakielinen
+          kirjoitusasu on merkki kirjoittajan asiantuntemuksesta, ja samalla
+          tekstin sanoma menee tehokkaasti perille. Kielenhuolto on sekä
+          kirjoittajan että lukijan huolenpitoa, jota ei kannata sivuuttaa.
+        </p>
+        <p>
+          Kielenhuoltajana hoidan
+          <ul>
+            <li>tietokirjat</li>
+            <li>väitöskirjat</li>
+            <li>opinnäytetyöt</li>
+            <li>julkaisut</li>
+            <li>oppaat.</li>
+          </ul>
         </p>
       </div>
     </div>
