@@ -46,7 +46,7 @@ const Header = () => {
               <strong>NELLI LEPPÄNEN</strong>
             </div>
             <div className="px-2 pb-2 text-sm leading-snug">
-              vapaa kirjoittaja ja viestinnän ammattilainen
+              Viestinnän ammattilainen & freelance-sisällöntuottaja
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@ const Header = () => {
               <strong>NELLI LEPPÄNEN</strong>
             </div>
             <div className="px-2 pb-2 text-sm leading-snug">
-              vapaa kirjoittaja ja viestinnän ammattilainen
+              Viestinnän ammattilainen & freelance-sisällöntuottaja
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@ const Header = () => {
           <div className="text-3xl font-bold">NELLI LEPPÄNEN</div>
           <br />
           <div className="text-xl">
-            vapaa kirjoittaja ja viestinnän ammattilainen
+            Viestinnän ammattilainen & freelance-sisällöntuottaja
           </div>
         </div>
       </div>

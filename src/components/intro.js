@@ -8,7 +8,7 @@ const Content = () => (
       kenties pesunkestävää journalistia tai tarkkasilmäistä kielenhuoltajaa?
       Mahtavaa, että löysit minut! Viestinnän ammattilaisena tarjoan
       monipuolisen osaamiseni käyttöösi. Voit tilata minulta kaikkea aina
-      henkilötarinoista blogiartikkeleihin ja laskeutumisivuista
+      henkilötarinoista blogiartikkeleihin ja laskeutumissivuista
       kielenhuoltoprojekteihin.
     </p>
     <p className="mb-4">
