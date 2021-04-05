@@ -27,7 +27,7 @@ const Content1 = () => {
           suu kääntyy hymyyn tai silmäkulma kostuu. Silloin teksti saa
           liikkeelle jotain sanoja suurempaa: se herättää tunteita.
         </p>
-        <p>
+        <div>
           Toimittajana kirjoitan
           <ul>
             <li>henkilöjutut</li>
@@ -38,7 +38,7 @@ const Content1 = () => {
             <li>referaatit</li>
             <li>raportit.</li>
           </ul>
-        </p>
+        </div>
       </div>
       <div className={`${mx} ${breakpoints.md ? "my-4" : "mt-12 w-1/2"}`}>
         <h2 className="text-teal text-xl font-bold">Sisällöntuotanto</h2>
@@ -51,7 +51,7 @@ const Content1 = () => {
           saavat heidät sitoutumaan yritykseesi. Kynästäni syntyy vaikuttavaa
           viestintää eri viestintäkanaviin ja tarpeisiin.
         </p>
-        <p>
+        <div>
           Sisällöntuottajana toteutan
           <ul>
             <li>blogiartikkelit</li>
@@ -62,7 +62,7 @@ const Content1 = () => {
             <li>uutiskirjeet</li>
             <li>verkkosivutekstit.</li>
           </ul>
-        </p>
+        </div>
       </div>
     </div>
   )
@@ -87,7 +87,7 @@ const Content2 = () => {
           psykologian kulmakiviä. Tavoitteenani on kasvattaa yrityksesi myyntiä
           tuloksellisten tekstien avulla.
         </p>
-        <p>
+        <div>
           Copywriterina tuotan
           <ul>
             <li>mainokset</li>
@@ -96,7 +96,7 @@ const Content2 = () => {
             <li>laskeutumissivut</li>
             <li>markkinointimateriaalit.</li>
           </ul>
-        </p>
+        </div>
       </div>
       <div className={`${mx} ${breakpoints.md ? "my-4" : "my-12 w-1/2"}`}>
         <h2 className="text-teal text-xl font-bold">Kielenhuolto</h2>
@@ -109,7 +109,7 @@ const Content2 = () => {
           tekstin sanoma menee tehokkaasti perille. Kielenhuolto on sekä
           kirjoittajan että lukijan huolenpitoa, jota ei kannata sivuuttaa.
         </p>
-        <p>
+        <div>
           Kielenhuoltajana hoidan
           <ul>
             <li>tietokirjat</li>
@@ -118,7 +118,7 @@ const Content2 = () => {
             <li>julkaisut</li>
             <li>oppaat.</li>
           </ul>
-        </p>
+        </div>
       </div>
     </div>
   )
