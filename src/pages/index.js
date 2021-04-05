@@ -23,7 +23,7 @@ const recommendations = [
       "Mandariinimedian Nelli on luotettava ammattikirjoittaja. Toimeksiannosta eteenpäin Nelli ottaa vastuun työstä: yhteydenpidosta haastateltaviin, taustatyöstä, aikataulusta ja tärkeimmästä – tekstin sielusta. Jokainen työ on vastannut toiveitamme. Iso peukku!",
   },
   {
-    author: "Mirva Kiviaho, toimituspäällikkö, Tuuma-kustannu",
+    author: "Mirva Kiviaho, toimituspäällikkö, Tuuma-kustannus",
     text:
       "Mandariinimedia on luotettava yhteistyökumppani. Nelli hoitaa käsikirjoitusten kielenhuollot tarkasti ja sovitun aikataulun mukaisesti.",
   },
