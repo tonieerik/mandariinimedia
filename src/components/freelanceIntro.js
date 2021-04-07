@@ -3,7 +3,7 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 const Content = () => (
   <>
-    <h1>
+    <h1 className="text-teal">
       Valitse freelance-sisällöntuottaja, joka taikoo puolestasi tuloksellista
       markkinointiviestintää
     </h1>

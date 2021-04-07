@@ -94,7 +94,8 @@ const Content2 = () => {
             <li>myyntitekstit</li>
             <li>advertoriaalit</li>
             <li>laskeutumissivut</li>
-            <li>markkinointimateriaalit.</li>
+            <li>markkinointimateriaalit</li>
+            <li>tuote- ja palvelukuvaukset.</li>
           </ul>
         </div>
       </div>

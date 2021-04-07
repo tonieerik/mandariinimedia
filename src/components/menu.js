@@ -28,10 +28,10 @@ const Menu = () => {
           >
             MITÄ TEEN
           </Link>
-          <Img
+          <a href="/"><Img
             fluid={data.logoImage.childImageSharp.fluid}
             className="mx-2 lg:mx-12 w-16 lg:w-24"
-          />
+          /></a>
           <Link
             className="lg:block text-gray-100 text-xl lg:text-2xl no-underline md:inline-block md:mt-0"
             key="portfolio"

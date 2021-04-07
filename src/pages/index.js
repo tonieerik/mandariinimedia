@@ -13,22 +13,26 @@ import WhatIDo from "../components/whatido"
 
 const recommendations = [
   {
-    author: "Anna Mäkelä, Content Manager, Duunitori",
+    name: "Anna Mäkelä",
+    title: "Content Manager, Duunitori",
     text:
       "Mandariinimedian Nelli on tuottanut Duunitorin työelämämediaan laadukkaita ja hyvin kirjoitettuja artikkeleita. Hän ehdottaa aktiivisesti kiinnostavia ideoita ja toteuttaa sovitut toimeksiannot aikataulussa. Yhteistyö Nellin kanssa on sujuvaa ja työn jälki priimaa. Suosittelen Nelliä lämpimästi erilaisiin tehtäviin kirjoittamisen ja sisällöntuotannon parissa.",
   },
   {
-    author: "Anna-Kaisa Talvitie, viestintäpäällikkö, Kasvu Open",
+    name: "Anna-Kaisa Talvitie",
+    title: "viestintäpäällikkö, Kasvu Open",
     text:
       "Mandariinimedian Nelli on luotettava ammattikirjoittaja. Toimeksiannosta eteenpäin Nelli ottaa vastuun työstä: yhteydenpidosta haastateltaviin, taustatyöstä, aikataulusta ja tärkeimmästä – tekstin sielusta. Jokainen työ on vastannut toiveitamme. Iso peukku!",
   },
   {
-    author: "Mirva Kiviaho, toimituspäällikkö, Tuuma-kustannus",
+    name: "Mirva Kiviaho",
+    title: "toimituspäällikkö, Tuuma-kustannus",
     text:
       "Mandariinimedia on luotettava yhteistyökumppani. Nelli hoitaa käsikirjoitusten kielenhuollot tarkasti ja sovitun aikataulun mukaisesti.",
   },
   {
-    author: "Toni Leppänen, elämyspalveluyrittäjä, Huvimestari",
+    name: "Toni Leppänen", 
+    title: "elämyspalveluyrittäjä, Huvimestari",
     text:
       "Nelli tuntee sisällöntuotannon salat ja paneutuu kirjoittamiseen tosissaan. Hän suunnittelee inspiroivia somesisältöjä, toteuttaa ne ammattilaisen ottein ja seuraa tuloksia. Nellin apu on pieni kulu siihen nähden, millaista hyötyä Huvimestari saa energisestä ja ajankohtaisesta markkinointiviestinnästä.",
   },
@@ -80,8 +84,8 @@ const IndexPage = () => {
 
       <WhatIDo />
 
-      <section className="bg-teal flex flex-col justify-center items-center text-gray-100 font-bold text-md py-12">
-        <div className="h-12 font-bold text-lg">
+      <section className="bg-teal flex flex-col justify-center items-center text-gray-100 font-bold text-md py-20">
+        <div className="h-12 font-bold text-xl">
           Asiakkaan suusta kuuluu totuus
         </div>
         <Carousel
@@ -89,16 +93,19 @@ const IndexPage = () => {
           interval={7000}
           infiniteLoop={true}
           showArrows={false}
-          showIndicators={false}
+          showIndicators={true}
           showStatus={false}
           showThumbs={false}
         >
           {recommendations.map((x, i) => (
-            <div key={`refe-${i}`} className="leading-tight font-normal">
+            <div key={`refe-${i}`} className="leading-tight font-normal pb-12">
               <i>"{x.text}"</i>
               <br />
               <br />
-              <p className="font-semibold">{x.author}</p>
+              <p className="font-semibold">
+                {x.name}<br />
+                {x.title}
+              </p>
             </div>
           ))}
         </Carousel>
