@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Valloittavaa viestintää`,
-    description: `Vapaa kirjoittaja ja viestinnän ammattilainen. Teen valloittavaa viestintää, jonka sanoma pirskahtelee kauas.`,
+    description: `Viestinnän ammattilainen ja freelance-sisällöntuottaja. Valloittavaa viestintää: toimitustyö, sisällöntuotanto, copywriting, kielenhuolto.`,
     author: `@gatsbyjs`,
     siteUrl: `https://mandariinimedia.fi`,
   },
