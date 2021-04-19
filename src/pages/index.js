@@ -31,7 +31,7 @@ const recommendations = [
       "Mandariinimedia on luotettava yhteistyökumppani. Nelli hoitaa käsikirjoitusten kielenhuollot tarkasti ja sovitun aikataulun mukaisesti.",
   },
   {
-    name: "Toni Leppänen", 
+    name: "Toni Leppänen",
     title: "elämyspalveluyrittäjä, Huvimestari",
     text:
       "Nelli tuntee sisällöntuotannon salat ja paneutuu kirjoittamiseen tosissaan. Hän suunnittelee inspiroivia somesisältöjä, toteuttaa ne ammattilaisen ottein ja seuraa tuloksia. Nellin apu on pieni kulu siihen nähden, millaista hyötyä Huvimestari saa energisestä ja ajankohtaisesta markkinointiviestinnästä.",
@@ -41,14 +41,18 @@ const recommendations = [
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      sceneryImage: file(relativePath: { eq: "maisema.jpg" }) {
+      sceneryImage: file(
+        relativePath: { eq: "sisallontuottaja-jyvaskyla.jpg" }
+      ) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1600) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      sceneryImageMobile: file(relativePath: { eq: "maisema-mobile.jpg" }) {
+      sceneryImageMobile: file(
+        relativePath: { eq: "sisallontuottaja-jyvaskyla-mobile.jpg" }
+      ) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1200) {
             ...GatsbyImageSharpFluid
@@ -70,7 +74,7 @@ const IndexPage = () => {
   */
   return (
     <Layout>
-      <SEO title="Mandariinimedia" />
+      <SEO title="Valloittavaa viestintää" />
 
       <Intro />
 
@@ -103,7 +107,8 @@ const IndexPage = () => {
               <br />
               <br />
               <p className="font-semibold">
-                {x.name}<br />
+                {x.name}
+                <br />
                 {x.title}
               </p>
             </div>
@@ -112,9 +117,15 @@ const IndexPage = () => {
       </section>
 
       {breakpoints.md ? (
-        <Img fluid={data.sceneryImageMobile.childImageSharp.fluid} />
+        <Img
+          fluid={data.sceneryImageMobile.childImageSharp.fluid}
+          alt="Sisällöntuottaja Jyväskylästä"
+        />
       ) : (
-        <Img fluid={data.sceneryImage.childImageSharp.fluid} />
+        <Img
+          fluid={data.sceneryImage.childImageSharp.fluid}
+          alt="Sisällöntuottaja Jyväskylästä"
+        />
       )}
 
       <Portfolio />

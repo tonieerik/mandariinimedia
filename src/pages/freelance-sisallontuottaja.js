@@ -28,16 +28,16 @@ const recommendations = [
       "Mandariinimedia on luotettava yhteistyökumppani. Nelli hoitaa käsikirjoitusten kielenhuollot tarkasti ja sovitun aikataulun mukaisesti.",
   },
   {
-    name: "Toni Leppänen", 
+    name: "Toni Leppänen",
     title: "elämyspalveluyrittäjä, Huvimestari",
     text:
       "Nelli tuntee sisällöntuotannon salat ja paneutuu kirjoittamiseen tosissaan. Hän suunnittelee inspiroivia somesisältöjä, toteuttaa ne ammattilaisen ottein ja seuraa tuloksia. Nellin apu on pieni kulu siihen nähden, millaista hyötyä Huvimestari saa energisestä ja ajankohtaisesta markkinointiviestinnästä.",
   },
 ]
 
-const IndexPage = () => 
+const IndexPage = () => (
   <Layout>
-    <SEO title="Mandariinimedia" />
+    <SEO title="Freelance sisällöntuottaja" />
 
     <FreelanceIntro />
 
@@ -62,7 +62,8 @@ const IndexPage = () =>
             <br />
             <br />
             <p className="font-semibold">
-              {x.name}<br />
+              {x.name}
+              <br />
               {x.title}
             </p>
           </div>
@@ -72,5 +73,6 @@ const IndexPage = () =>
 
     <FreelanceWhat />
   </Layout>
+)
 
 export default IndexPage

@@ -10,21 +10,25 @@ const Header = () => {
 
   const data = useStaticQuery(graphql`
     query {
-      nelliImage: file(relativePath: { eq: "nelli.png" }) {
+      nelliImage: file(relativePath: { eq: "freelance-sisallontuottaja.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      nelliImageMobile: file(relativePath: { eq: "nelli-mobile.jpg" }) {
+      nelliImageMobile: file(
+        relativePath: { eq: "freelance-sisallontuottaja-mobile.jpg" }
+      ) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1000) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-      nelliImageIpad: file(relativePath: { eq: "nelli-ipad.jpg" }) {
+      nelliImageIpad: file(
+        relativePath: { eq: "freelance-sisallontuottaja-ipad.jpg" }
+      ) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1200) {
             ...GatsbyImageSharpFluid_withWebp

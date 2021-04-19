@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Valloittavaa viestintää`,
+    title: `Mandariinimedia`,
     description: `Viestinnän ammattilainen ja freelance-sisällöntuottaja. Valloittavaa viestintää: toimitustyö, sisällöntuotanto, copywriting, kielenhuolto.`,
     author: `@gatsbyjs`,
     siteUrl: `https://mandariinimedia.fi`,
