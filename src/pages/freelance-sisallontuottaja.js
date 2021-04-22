@@ -37,7 +37,7 @@ const recommendations = [
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Freelance sisällöntuottaja" />
+    <SEO title="Freelance-sisällöntuottaja" />
 
     <FreelanceIntro />
 
