@@ -86,8 +86,8 @@ const IndexPage = () => {
       <Intro />
 
       <section
-        className={`bg-teal flex justify-center items-center text-gray-100 font-bold tracking-wider leading-10 ${
-          breakpoints.md ? "h-32 text-xl px-10" : "h-64 text-2xl"
+        className={`bg-teal flex justify-center items-center text-gray-100 font-bold tracking-wider ${
+          breakpoints.md ? "h-56 text-xl px-10" : "leading-10 h-64 text-2xl"
         }`}
       >
         <center>

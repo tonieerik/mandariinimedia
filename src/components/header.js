@@ -44,8 +44,8 @@ const Header = () => {
         className="flex flex-col justify-end h-64 text-gray-100 mobileHeaderImage"
         fluid={data.nelliImageMobile.childImageSharp.fluid}
       >
-        <div className="flex flex-row justify-end w-full p-2">
-          <div className="w-1/2 flex-col items-end bg-teal rounded">
+        <div className="flex flex-row justify-end w-fit p-2 mx-2">
+          <div className="w-full flex-col items-end bg-teal rounded">
             <div className="px-2 pt-2 pb-1 leading-none">
               <strong>NELLI LEPPÄNEN</strong>
             </div>
