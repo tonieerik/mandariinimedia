@@ -4,35 +4,27 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints"
 const Content = () => (
   <>
     <p className="mb-4">
-      Kaipaatko osaavaa sisällöntuottajaa tai tehokasta copywriteria? Tai
-      kenties pesunkestävää journalistia tai tarkkasilmäistä kielenhuoltajaa?
-      Mahtavaa, että löysit minut! Viestinnän ammattilaisena tarjoan
-      monipuolisen osaamiseni käyttöösi. Voit tilata minulta kaikkea aina
-      henkilötarinoista blogiartikkeleihin ja laskeutumissivuista
-      kielenhuoltoprojekteihin.
+      Oletko vailla osaavaa sisällöntuottajaa, pesunkestävää toimittajaa,
+      tehokasta copywriteria, tarkkasilmäistä kielenhuoltajaa? Mainiota, että
+      löysit minut!
     </p>
     <p className="mb-4">
-      Olen Nelli, seikkailumielinen ja loputtoman utelias viestintäyrittäjä
-      Jyväskylästä. Teksteilläni haluan innostaa, koskettaa ja herättää
-      oivalluksia. Kielen ja viestinnän asiantuntijana sytyn eloisasta ja
-      nokkelasta kielenkäytöstä, joka pitää lukijan otteessaan viimeiseen
-      pisteeseen saakka. Hion jokaisesta tekstistä timantin, joka vakuuttaa
-      paitsi sinut myös asiakkaasi.
+      Olen Nelli, sanojen maailmassa seikkaileva ajattelija. Viestinnän
+      asiantuntijana autan yrityksiä, organisaatioita ja medioita kertomaan
+      viestinsä niin, että se iskostuu taatusti vastaanottajan mieleen. Satsaan
+      aina siihen, että jokainen teksti on sujuvasti, ymmärrettävästi ja
+      vetävästi toteutettu.
     </p>
     <p className="mb-4">
-      Yliopisto-opintoni ovat luoneet viestijän identiteetilleni vankan
-      jalustan. Urallani olen työskennellyt viestinnän kentällä niin
-      toimittajana, tiedottajana, viestintäsuunnittelijana, sisällöntuottajana
-      kuin kielenhuoltajana. Jos jotain olen vuosien varrella oppinut, niin sen,
-      että viestinnällä todellakin on väliä. Sillä voi vakuuttaa, vaikuttaa ja
-      valloittaa.
+      Ota siis avuksesi kielenkäytön ja kirjoittamisen ammattilainen, joka
+      loihtii puolestasi tekstejä – sellaisia, joilla on merkitystä ja arvoa.
+      Koska kirjoittaminen on leipälajini ja tarinankerronta intohimoni, voit
+      tilata minulta kaikkea aina asiakasreferensseistä blogiartikkeleihin ja
+      henkilötarinoista kielenhuoltoprojekteihin.
     </p>
     <p className="mb-4">
-      Uskon, että kirjoittaen kaikki on mahdollista. Siksi siitä kannattaa ottaa
-      kaikki ilo ja hyöty irti. Ota siis avuksesi viestinnän ammattilainen,
-      jonka leipälaji ja intohimo on kirjoittaminen. Loihdin puolestasi
-      tekstejä, joilla on merkitystä ja arvoa. Laita viestiä tai soita, niin
-      rupatellaan lisää.
+      Kirjoittaen kaikki on mahdollista. Rupatellaan ihmeessä lisää, miten voin
+      olla sinulle avuksi.
     </p>
   </>
 )
@@ -44,7 +36,7 @@ const Mobile = () => (
 )
 
 const Desktop = () => (
-  <section className="mx-24 my-16">
+  <section className="mx-48 my-16">
     <Content />
   </section>
 )

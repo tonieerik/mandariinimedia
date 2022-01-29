@@ -50,7 +50,9 @@ const Header = () => {
               <strong>NELLI LEPPÄNEN</strong>
             </div>
             <div className="px-2 pb-2 text-sm leading-snug">
-              Viestinnän ammattilainen & freelance-sisällöntuottaja
+              Viestinnän ammattilainen & freelance-sisällöntuottaja,
+              <br />
+              jolla on kirjoittajan sydän ja ajattelijan mieli
             </div>
           </div>
         </div>
@@ -68,7 +70,9 @@ const Header = () => {
               <strong>NELLI LEPPÄNEN</strong>
             </div>
             <div className="px-2 pb-2 text-sm leading-snug">
-              Viestinnän ammattilainen & freelance-sisällöntuottaja
+              Viestinnän ammattilainen & freelance-sisällöntuottaja,
+              <br />
+              jolla on kirjoittajan sydän ja ajattelijan mieli
             </div>
           </div>
         </div>
@@ -81,10 +85,12 @@ const Header = () => {
           <Img fluid={data.nelliImage.childImageSharp.fluid} />
         </div>
         <div className="flex flex-col justify-end w-1/2 pb-12">
-          <div className="text-3xl font-bold">NELLI LEPPÄNEN</div>
+          <div className="text-4xl font-bold">NELLI LEPPÄNEN</div>
           <br />
           <div className="text-xl">
-            Viestinnän ammattilainen & freelance-sisällöntuottaja
+            Viestinnän ammattilainen & freelance-sisällöntuottaja,
+            <br />
+            jolla on kirjoittajan sydän ja ajattelijan mieli
           </div>
         </div>
       </div>

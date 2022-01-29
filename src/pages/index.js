@@ -10,6 +10,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Portfolio from "../components/portfolio"
 import WhatIDo from "../components/whatido"
+import WhoIAm from "../components/whoiam"
 
 const recommendations = [
   {
@@ -35,6 +36,12 @@ const recommendations = [
     title: "elämyspalveluyrittäjä, Huvimestari",
     text:
       "Nelli tuntee sisällöntuotannon salat ja paneutuu kirjoittamiseen tosissaan. Hän suunnittelee inspiroivia somesisältöjä, toteuttaa ne ammattilaisen ottein ja seuraa tuloksia. Nellin apu on pieni kulu siihen nähden, millaista hyötyä Huvimestari saa energisestä ja ajankohtaisesta markkinointiviestinnästä.",
+  },
+  {
+    name: "Elina Hovinen",
+    title: "asiakkuuspäällikkö, Hube Helsinki",
+    text:
+      "Mandariinimedian Nelliltä tulee todella hyviä juttuja, joita ei juurikaan tarvitse editoida. Hän osaa kysyä haastateltavilta aina juuri oikeat kysymykset ja nostaa jutuissa esiin kiinnostavat yksityiskohdat. Nelli on hyvä toimittaja, jonka työnjälkeen ja aikataulutukseen voi aina luottaa.",
   },
 ]
 
@@ -79,19 +86,23 @@ const IndexPage = () => {
       <Intro />
 
       <section
-        className={`bg-teal flex justify-center items-center text-gray-100 font-bold tracking-wider ${
+        className={`bg-teal flex justify-center items-center text-gray-100 font-bold tracking-wider leading-10 ${
           breakpoints.md ? "h-32 text-xl px-10" : "h-64 text-2xl"
         }`}
       >
-        <i>Oivaltava viestintä vakuuttaa, vaikuttaa ja valloittaa.</i>
+        <center>
+          <i>
+            Sormeni odottavat jo malttamattomina näppäimistöllä.
+            <br />
+            Toivottavasti pääsen kertomaan seuraavaksi sinun tarinasi.
+          </i>
+        </center>
       </section>
 
       <WhatIDo />
 
       <section className="bg-teal flex flex-col justify-center items-center text-gray-100 font-bold text-md py-20">
-        <div className="h-12 font-bold text-xl">
-          Asiakkaan suusta kuuluu totuus
-        </div>
+        <div className="h-12 font-bold text-xl">Muiden suusta kuultua</div>
         <Carousel
           autoPlay={true}
           interval={7000}
@@ -115,6 +126,8 @@ const IndexPage = () => {
           ))}
         </Carousel>
       </section>
+
+      <WhoIAm />
 
       {breakpoints.md ? (
         <Img

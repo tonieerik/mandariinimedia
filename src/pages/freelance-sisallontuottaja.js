@@ -33,6 +33,12 @@ const recommendations = [
     text:
       "Nelli tuntee sisällöntuotannon salat ja paneutuu kirjoittamiseen tosissaan. Hän suunnittelee inspiroivia somesisältöjä, toteuttaa ne ammattilaisen ottein ja seuraa tuloksia. Nellin apu on pieni kulu siihen nähden, millaista hyötyä Huvimestari saa energisestä ja ajankohtaisesta markkinointiviestinnästä.",
   },
+  {
+    name: "Elina Hovinen",
+    title: "asiakkuuspäällikkö, Hube Helsinki",
+    text:
+      "Mandariinimedian Nelliltä tulee todella hyviä juttuja, joita ei juurikaan tarvitse editoida. Hän osaa kysyä haastateltavilta aina juuri oikeat kysymykset ja nostaa jutuissa esiin kiinnostavat yksityiskohdat. Nelli on hyvä toimittaja, jonka työnjälkeen ja aikataulutukseen voi aina luottaa.",
+  },
 ]
 
 const IndexPage = () => (
@@ -45,7 +51,7 @@ const IndexPage = () => (
 
     <section className="bg-teal flex flex-col justify-center items-center text-gray-100 font-bold text-md py-20">
       <div className="h-12 font-bold text-xl">
-        Asiakkaan suusta kuuluu totuus
+        Muiden suusta kuultua
       </div>
       <Carousel
         autoPlay={true}
