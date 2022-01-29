@@ -63,9 +63,6 @@ div {
   transform: scale(1.2);
   transition: 0.5s ease-out;
 }
-ul {
-  margin-top: 10px !important;
-}
 li {
   list-style-type: disc;
   line-height: 12px;

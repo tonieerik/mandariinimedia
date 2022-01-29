@@ -1,23 +1,8 @@
 import { Link } from "gatsby"
 import React from "react"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
-//import Img from "gatsby-image"
 
 const Menu = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     logoImage: file(
-  //       relativePath: { eq: "mandariinimedia_logo_mandariini.png" }
-  //     ) {
-  //       childImageSharp {
-  //         fluid(maxWidth: 100) {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-
   const breakpoints = useBreakpoint()
 
   return (
@@ -42,13 +27,6 @@ const Menu = () => {
           >
             KUKA OLEN
           </Link>
-          {/* <a href="/">
-            <Img
-              fluid={data.logoImage.childImageSharp.fluid}
-              className="mx-2 lg:mx-12 w-16 lg:w-24"
-              alt="Mandariinimedia-logo"
-            />
-          </a> */}
           <Link
             className={`lg:block text-gray-100 text-xl lg:text-2xl no-underline md:inline-block md:mt-0 ${
               breakpoints.md ? "px-2" : "px-4"

@@ -1,9 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import BackgroundImage from "gatsby-background-image"
-
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
+import BackgroundImage from "gatsby-background-image"
+import { convertToBgImage } from "gbimage-bridge"
 
 const Header = () => {
   const breakpoints = useBreakpoint()
@@ -12,37 +12,34 @@ const Header = () => {
     query {
       nelliImage: file(relativePath: { eq: "freelance-sisallontuottaja.png" }) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(quality: 90, layout: FULL_WIDTH)
         }
       }
       nelliImageMobile: file(
         relativePath: { eq: "freelance-sisallontuottaja-mobile.jpg" }
       ) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 1000) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(quality: 90, width: 300)
         }
       }
       nelliImageIpad: file(
         relativePath: { eq: "freelance-sisallontuottaja-ipad.jpg" }
       ) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 1200) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(quality: 90, width: 500)
         }
       }
     }
   `)
 
+  const bgMobile = convertToBgImage(getImage(data.nelliImageMobile))
+  const bgIpad = convertToBgImage(getImage(data.nelliImageIpad))
+
   if (breakpoints.sm) {
     return (
       <BackgroundImage
         className="flex flex-col justify-end h-64 text-gray-100 mobileHeaderImage"
-        fluid={data.nelliImageMobile.childImageSharp.fluid}
+        {...bgMobile}
       >
         <div className="flex flex-row justify-end w-fit p-2 mx-2">
           <div className="w-full flex-col items-end bg-teal rounded">
@@ -62,7 +59,7 @@ const Header = () => {
     return (
       <BackgroundImage
         className="flex flex-col justify-end text-gray-100 ipadHeaderImage"
-        fluid={data.nelliImageIpad.childImageSharp.fluid}
+        {...bgIpad}
       >
         <div className="flex flex-row justify-end w-full p-2">
           <div className="w-1/2 flex-col items-end bg-teal rounded">
@@ -82,7 +79,10 @@ const Header = () => {
     return (
       <div className="bg-teal text-gray-100 flex">
         <div className="w-1/2">
-          <Img fluid={data.nelliImage.childImageSharp.fluid} />
+          <GatsbyImage
+            image={data.nelliImage.childImageSharp.gatsbyImageData}
+            alt="Freelance-sisällöntuottaja"
+          />
         </div>
         <div className="flex flex-col justify-end w-1/2 pb-12">
           <div className="text-4xl font-bold">NELLI LEPPÄNEN</div>

@@ -4,8 +4,8 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints"
 const Content = () => (
   <>
     <p className="mb-4">
-      Oletko vailla osaavaa sisällöntuottajaa, pesunkestävää toimittajaa,
-      tehokasta copywriteria, tarkkasilmäistä kielenhuoltajaa? Mainiota, että
+      Hei, oletko vailla osaavaa sisällöntuottajaa, pesunkestävää toimittajaa,
+      tehokasta copywriteria tai tarkkasilmäistä kielenhuoltajaa? Mainiota, että
       löysit minut!
     </p>
     <p className="mb-4">

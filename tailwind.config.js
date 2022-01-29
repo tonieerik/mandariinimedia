@@ -3,10 +3,11 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: [],
+  config: [],
   theme: {
     extend: {},
   },
   variants: {},
   plugins: [],
+  content: ["./src/pages/**/*.{html,js}", "./src/components/**/*.{html,js}"],
 }

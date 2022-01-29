@@ -1,13 +1,13 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import { Carousel } from "react-responsive-carousel"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 
 import Intro from "../components/intro"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Portfolio from "../components/portfolio"
 import WhatIDo from "../components/whatido"
 import WhoIAm from "../components/whoiam"
@@ -52,18 +52,14 @@ const IndexPage = () => {
         relativePath: { eq: "sisallontuottaja-jyvaskyla.jpg" }
       ) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 1600) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(quality: 90)
         }
       }
       sceneryImageMobile: file(
         relativePath: { eq: "sisallontuottaja-jyvaskyla-mobile.jpg" }
       ) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 1200) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(quality: 90)
         }
       }
     }
@@ -71,17 +67,9 @@ const IndexPage = () => {
 
   const breakpoints = useBreakpoint()
 
-  /*
-  return (
-    <div>
-      <br />
-      <center>SIVUSTO ON RAKENTEILLA</center>
-    </div>
-  )
-  */
   return (
     <Layout>
-      <SEO title="Valloittavaa viestintää" />
+      <Seo title="Valloittavaa viestintää" />
 
       <Intro />
 
@@ -130,13 +118,13 @@ const IndexPage = () => {
       <WhoIAm />
 
       {breakpoints.md ? (
-        <Img
-          fluid={data.sceneryImageMobile.childImageSharp.fluid}
+        <GatsbyImage
+          image={data.sceneryImageMobile.childImageSharp.gatsbyImageData}
           alt="Sisällöntuottaja Jyväskylästä"
         />
       ) : (
-        <Img
-          fluid={data.sceneryImage.childImageSharp.fluid}
+        <GatsbyImage
+          image={data.sceneryImage.childImageSharp.gatsbyImageData}
           alt="Sisällöntuottaja Jyväskylästä"
         />
       )}

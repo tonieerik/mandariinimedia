@@ -195,16 +195,14 @@ const Content = () => {
 
 const Mobile = () => (
   <section className="bg-orange flex mx-0" id="portfolio">
-    <div className="self-center text-xl text-white w-1/6 whitespace-no-wrap transform -rotate-90 tracking-widest">
-      PORTFOLIO
-    </div>
+    <div className="w-36">&nbsp;</div>
     <Content />
   </section>
 )
 
 const Desktop = () => (
   <section className="bg-orange flex mx-0" id="portfolio">
-    <div className="self-center text-xl text-white w-1/12 whitespace-no-wrap transform -rotate-90 tracking-widest">
+    <div className="self-center text-xl text-white whitespace-no-wrap transform -rotate-90 tracking-widest">
       PORTFOLIO
     </div>
     <Content />

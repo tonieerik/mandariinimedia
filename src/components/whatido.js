@@ -29,7 +29,7 @@ const Content1 = () => {
         </p>
         <div>
           Toimittajana kirjoitan
-          <ul>
+          <ul className="mt-3">
             <li>henkilöjutut</li>
             <li>artikkelit</li>
             <li>reportaasit</li>
@@ -53,7 +53,7 @@ const Content1 = () => {
         </p>
         <div>
           Sisällöntuottajana toteutan
-          <ul>
+          <ul className="mt-3">
             <li>blogiartikkelit</li>
             <li>somejulkaisut</li>
             <li>yritystarinat</li>
@@ -89,7 +89,7 @@ const Content2 = () => {
         </p>
         <div>
           Copywriterina tuotan
-          <ul>
+          <ul className="mt-3">
             <li>mainokset</li>
             <li>myyntitekstit</li>
             <li>advertoriaalit</li>
@@ -112,7 +112,7 @@ const Content2 = () => {
         </p>
         <div>
           Kielenhuoltajana hoidan
-          <ul>
+          <ul className="mt-3">
             <li>tietokirjat</li>
             <li>väitöskirjat</li>
             <li>opinnäytetyöt</li>
@@ -126,17 +126,15 @@ const Content2 = () => {
 }
 
 const Mobile = () => (
-  <section className="bg-orange flex mx-0" id="mita-teen">
-    <div className="self-center text-xl text-white w-1/6 whitespace-no-wrap transform -rotate-90 tracking-widest">
-      MITÄ&nbsp;TEEN
-    </div>
+  <section className="bg-orange flex mx-0" id="portfolio">
+    <div className="w-60">&nbsp;</div>
     <Content />
   </section>
 )
 
 const Desktop = () => (
   <section className="bg-orange flex mx-0" id="mita-teen">
-    <div className="self-center text-xl text-white w-1/12 whitespace-no-wrap transform -rotate-90 tracking-widest">
+    <div className="self-center text-xl text-white whitespace-no-wrap transform -rotate-90 tracking-widest">
       MITÄ&nbsp;TEEN
     </div>
     <Content />
