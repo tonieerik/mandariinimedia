@@ -4,7 +4,7 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints"
 const Content = () => (
   <>
     <p className="mb-4">
-      Hei, oletko vailla osaavaa sisällöntuottajaa, pesunkestävää toimittajaa,
+      Hei, oletko vailla luovaa sisällöntuottajaa, pesunkestävää toimittajaa,
       tehokasta copywriteria tai tarkkasilmäistä kielenhuoltajaa? Mainiota, että
       löysit minut!
     </p>
@@ -20,11 +20,11 @@ const Content = () => (
       loihtii puolestasi tekstejä – sellaisia, joilla on merkitystä ja arvoa.
       Koska kirjoittaminen on leipälajini ja tarinankerronta intohimoni, voit
       tilata minulta kaikkea aina asiakasreferensseistä blogiartikkeleihin ja
-      henkilötarinoista kielenhuoltoprojekteihin.
+      yritystarinoista kielenhuoltoprojekteihin.
     </p>
     <p className="mb-4">
-      Kirjoittaen kaikki on mahdollista. Rupatellaan ihmeessä lisää, miten voin
-      olla sinulle avuksi.
+      Haluatpa tekstin avulla ainutlaatuista näkyvyyttä, lisää sitoutuvia
+      asiakkaita tai rehellistä myyntiä, olen täällä sinua varten.
     </p>
   </>
 )

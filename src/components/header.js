@@ -5,7 +5,7 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import BackgroundImage from "gatsby-background-image"
 import { convertToBgImage } from "gbimage-bridge"
 
-const Header = () => {
+const Header = ({ headerText = null }) => {
   const breakpoints = useBreakpoint()
 
   const data = useStaticQuery(graphql`
@@ -47,7 +47,7 @@ const Header = () => {
               <strong>NELLI LEPPÄNEN</strong>
             </div>
             <div className="px-2 pb-2 text-sm leading-snug">
-              Viestinnän ammattilainen & freelance-sisällöntuottaja,
+              Viestinnän ammattilainen & freelancesisällöntuottaja,
               <br />
               jolla on kirjoittajan sydän ja ajattelijan mieli
             </div>
@@ -67,9 +67,13 @@ const Header = () => {
               <strong>NELLI LEPPÄNEN</strong>
             </div>
             <div className="px-2 pb-2 text-sm leading-snug">
-              Viestinnän ammattilainen & freelance-sisällöntuottaja,
-              <br />
-              jolla on kirjoittajan sydän ja ajattelijan mieli
+              {headerText || (
+                <div>
+                  Viestinnän ammattilainen & freelancesisällöntuottaja,
+                  <br />
+                  jolla on kirjoittajan sydän ja ajattelijan mieli
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -81,16 +85,20 @@ const Header = () => {
         <div className="w-1/2">
           <GatsbyImage
             image={data.nelliImage.childImageSharp.gatsbyImageData}
-            alt="Freelance-sisällöntuottaja"
+            alt="Freelancesisällöntuottaja"
           />
         </div>
         <div className="flex flex-col justify-end w-1/2 pb-12">
           <div className="text-4xl font-bold">NELLI LEPPÄNEN</div>
           <br />
           <div className="text-xl">
-            Viestinnän ammattilainen & freelance-sisällöntuottaja,
-            <br />
-            jolla on kirjoittajan sydän ja ajattelijan mieli
+            {headerText || (
+              <div>
+                Viestinnän ammattilainen & freelancesisällöntuottaja,
+                <br />
+                jolla on kirjoittajan sydän ja ajattelijan mieli
+              </div>
+            )}
           </div>
         </div>
       </div>

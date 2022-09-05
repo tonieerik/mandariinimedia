@@ -9,6 +9,7 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-breakpoints`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,

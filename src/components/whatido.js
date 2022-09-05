@@ -2,9 +2,16 @@ import React from "react"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 const Content = () => (
-  <div className={`bg-white px-8 flex flex-col`}>
+  <div className="w-full bg-white px-8 flex flex-col">
     <Content1 />
     <Content2 />
+    <div className="p-8 pt-0 pb-16">
+      Viime aikoina olen syventynyt kirjoittaessani erityisesti työelämään,
+      yritysmaailmaan, vastuullisuuteen, kulttuurialaan, mielen hyvinvointiin
+      sekä luontoon ja retkeilyyn. Ei ole kuitenkaan olemassa aihetta, jota
+      ammattikirjoittaja ei ottaisi haltuun. Kysy viestintäpalveluistani lisää
+      tai pyydä suoraan tarjous.
+    </div>
   </div>
 )
 
@@ -126,16 +133,16 @@ const Content2 = () => {
 }
 
 const Mobile = () => (
-  <section className="bg-orange flex mx-0" id="portfolio">
-    <div className="w-60">&nbsp;</div>
+  <section className="bg-orange flex mx-0" id="mita-teen">
+    <div className="w-1/12">&nbsp;</div>
     <Content />
   </section>
 )
 
 const Desktop = () => (
   <section className="bg-orange flex mx-0" id="mita-teen">
-    <div className="self-center text-xl text-white whitespace-no-wrap transform -rotate-90 tracking-widest">
-      MITÄ&nbsp;TEEN
+    <div className="self-center text-xl text-white whitespace-no-wrap transform -rotate-90 tracking-widest w-1/6">
+      MITEN&nbsp;VOIN&nbsp;AUTTAA?
     </div>
     <Content />
   </section>

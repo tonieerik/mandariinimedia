@@ -11,37 +11,33 @@ import Seo from "../components/seo"
 import Portfolio from "../components/portfolio"
 import WhatIDo from "../components/whatido"
 import WhoIAm from "../components/whoiam"
+import Contact from "../components/contact"
 
 const recommendations = [
   {
     name: "Anna Mäkelä",
     title: "Content Manager, Duunitori",
-    text:
-      "Mandariinimedian Nelli on tuottanut Duunitorin työelämämediaan laadukkaita ja hyvin kirjoitettuja artikkeleita. Hän ehdottaa aktiivisesti kiinnostavia ideoita ja toteuttaa sovitut toimeksiannot aikataulussa. Yhteistyö Nellin kanssa on sujuvaa ja työn jälki priimaa. Suosittelen Nelliä lämpimästi erilaisiin tehtäviin kirjoittamisen ja sisällöntuotannon parissa.",
+    text: "Mandariinimedian Nelli on tuottanut Duunitorin työelämämediaan laadukkaita ja hyvin kirjoitettuja artikkeleita. Hän ehdottaa aktiivisesti kiinnostavia ideoita ja toteuttaa sovitut toimeksiannot aikataulussa. Yhteistyö Nellin kanssa on sujuvaa ja työn jälki priimaa. Suosittelen Nelliä lämpimästi erilaisiin tehtäviin kirjoittamisen ja sisällöntuotannon parissa.",
   },
   {
     name: "Anna-Kaisa Talvitie",
     title: "viestintäpäällikkö, Kasvu Open",
-    text:
-      "Mandariinimedian Nelli on luotettava ammattikirjoittaja. Toimeksiannosta eteenpäin Nelli ottaa vastuun työstä: yhteydenpidosta haastateltaviin, taustatyöstä, aikataulusta ja tärkeimmästä – tekstin sielusta. Jokainen työ on vastannut toiveitamme. Iso peukku!",
+    text: "Mandariinimedian Nelli on luotettava ammattikirjoittaja. Toimeksiannosta eteenpäin Nelli ottaa vastuun työstä: yhteydenpidosta haastateltaviin, taustatyöstä, aikataulusta ja tärkeimmästä – tekstin sielusta. Jokainen työ on vastannut toiveitamme. Iso peukku!",
   },
   {
     name: "Mirva Kiviaho",
     title: "toimituspäällikkö, Tuuma-kustannus",
-    text:
-      "Mandariinimedia on luotettava yhteistyökumppani. Nelli hoitaa käsikirjoitusten kielenhuollot tarkasti ja sovitun aikataulun mukaisesti.",
+    text: "Mandariinimedia on luotettava yhteistyökumppani. Nelli hoitaa käsikirjoitusten kielenhuollot tarkasti ja sovitun aikataulun mukaisesti.",
   },
   {
     name: "Toni Leppänen",
     title: "elämyspalveluyrittäjä, Huvimestari",
-    text:
-      "Nelli tuntee sisällöntuotannon salat ja paneutuu kirjoittamiseen tosissaan. Hän suunnittelee inspiroivia somesisältöjä, toteuttaa ne ammattilaisen ottein ja seuraa tuloksia. Nellin apu on pieni kulu siihen nähden, millaista hyötyä Huvimestari saa energisestä ja ajankohtaisesta markkinointiviestinnästä.",
+    text: "Nelli tuntee sisällöntuotannon salat ja paneutuu kirjoittamiseen tosissaan. Hän suunnittelee inspiroivia somesisältöjä, toteuttaa ne ammattilaisen ottein ja seuraa tuloksia. Nellin apu on pieni kulu siihen nähden, millaista hyötyä Huvimestari saa energisestä ja ajankohtaisesta markkinointiviestinnästä.",
   },
   {
     name: "Elina Hovinen",
     title: "asiakkuuspäällikkö, Hube Helsinki",
-    text:
-      "Mandariinimedian Nelliltä tulee todella hyviä juttuja, joita ei juurikaan tarvitse editoida. Hän osaa kysyä haastateltavilta aina juuri oikeat kysymykset ja nostaa jutuissa esiin kiinnostavat yksityiskohdat. Nelli on hyvä toimittaja, jonka työnjälkeen ja aikataulutukseen voi aina luottaa.",
+    text: "Mandariinimedian Nelliltä tulee todella hyviä juttuja, joita ei juurikaan tarvitse editoida. Hän osaa kysyä haastateltavilta aina juuri oikeat kysymykset ja nostaa jutuissa esiin kiinnostavat yksityiskohdat. Nelli on hyvä toimittaja, jonka työnjälkeen ja aikataulutukseen voi aina luottaa.",
   },
 ]
 
@@ -80,14 +76,22 @@ const IndexPage = () => {
       >
         <center>
           <i>
-            Sormeni odottavat jo malttamattomina näppäimistöllä.
+            Kirjoittaen mahdottomastakin voi tehdä mahdollista.
             <br />
-            Toivottavasti pääsen kertomaan seuraavaksi sinun tarinasi.
+            Se on vain kiinni luovuudesta, heittäytymisestä ja
+            mielikuvituksesta.
           </i>
         </center>
       </section>
 
       <WhatIDo />
+
+      <GatsbyImage
+        image={data.sceneryImage.childImageSharp.gatsbyImageData}
+        alt="Sisällöntuottaja Jyväskylästä"
+      />
+
+      <WhoIAm />
 
       <section className="bg-teal flex flex-col justify-center items-center text-gray-100 font-bold text-md py-20">
         <div className="h-12 font-bold text-xl">Muiden suusta kuultua</div>
@@ -115,21 +119,24 @@ const IndexPage = () => {
         </Carousel>
       </section>
 
-      <WhoIAm />
-
-      {breakpoints.md ? (
-        <GatsbyImage
-          image={data.sceneryImageMobile.childImageSharp.gatsbyImageData}
-          alt="Sisällöntuottaja Jyväskylästä"
-        />
-      ) : (
-        <GatsbyImage
-          image={data.sceneryImage.childImageSharp.gatsbyImageData}
-          alt="Sisällöntuottaja Jyväskylästä"
-        />
-      )}
-
       <Portfolio />
+
+      <section
+        className={`bg-teal flex justify-center items-center text-gray-100 font-bold tracking-wider ${
+          breakpoints.md ? "h-56 text-xl px-10" : "leading-10 h-64 text-2xl"
+        }`}
+      >
+        <center>
+          <i>
+            Kirjoittaminen on kuin tanssia kirjainten parketilla.
+            <br />
+            Sen pyörteissä sanat kiepahtavat lauseiksi, lauseet kappaleiksi ja
+            kappaleet eheäksi tekstiksi.
+          </i>
+        </center>
+      </section>
+
+      <Contact />
     </Layout>
   )
 }

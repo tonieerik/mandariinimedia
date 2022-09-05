@@ -7,10 +7,10 @@ import Footer from "./footer"
 
 import "./layout.css"
 
-const Layout = ({ children }) => (
+const Layout = ({ children, headerText = null, noMenu = false }) => (
   <>
-    <Header />
-    <Menu />
+    <Header headerText={headerText} />
+    {!noMenu && <Menu />}
     <main>{children}</main>
     <Footer />
   </>
