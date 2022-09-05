@@ -19,8 +19,8 @@ export default function formHandler(req, res) {
 
   sgMail.setApiKey(process.env.SENDGRID_API_KEY)
   const msg = {
-    to: "nelli@mandariinimedia.fi", // Change to your recipient
-    from: "Mandariinimedia <nelli@mandariinimedia.fi>", // Change to your verified sender
+    to: "toni.leppanen@gmail.com", //"nelli@mandariinimedia.fi",
+    from: "Mandariinimedia <nelli@mandariinimedia.fi>", // Verified sender
     reply_to: htmlEntities(req.body.email),
     subject: "Mandariinimedia: viesti verkkosivuilta",
     text: `Nimi: ${htmlEntities(req.body.name)}, Sähköposti: ${htmlEntities(
