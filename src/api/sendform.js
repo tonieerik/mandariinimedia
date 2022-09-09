@@ -41,10 +41,10 @@ export default function formHandler(req, res) {
     .send(msg)
     .then(() => {
       console.log("Email sent")
+      return res.json(`OK`)
     })
     .catch(error => {
       console.error(error)
+      return res.json(`FAIL`)
     })
-
-  return res.json(`OK`)
 }
