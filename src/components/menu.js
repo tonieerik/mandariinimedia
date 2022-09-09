@@ -22,13 +22,12 @@ const Menu = () => {
             md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6 list-none`}
         >
           <p className="md:hidden z-90 fixed top-2 right-5">
-            <a
-              href="void(0)"
+            <button
               className="text-right text-white text-4xl"
               onClick={() => setIsMenuVisible(!isMenuVisible)}
             >
               &times;
-            </a>
+            </button>
           </p>
 
           <p>
@@ -36,6 +35,7 @@ const Menu = () => {
               className="lg:block text-gray-100 text-xl lg:text-2xl no-underline md:inline-block md:mt-0 px-4"
               key="mitä teen"
               to="/#mita-teen"
+              onClick={() => setIsMenuVisible(false)}
             >
               Miten voin auttaa?
             </Link>
@@ -45,6 +45,7 @@ const Menu = () => {
               className="lg:block text-gray-100 text-xl lg:text-2xl no-underline md:inline-block md:mt-0 px-4"
               key="kuka olen"
               to="/#kuka-olen"
+              onClick={() => setIsMenuVisible(false)}
             >
               Tutustutaan
             </Link>
@@ -54,6 +55,7 @@ const Menu = () => {
               className="lg:block text-gray-100 text-xl lg:text-2xl no-underline md:inline-block md:mt-0 px-4"
               key="portfolio"
               to="/#portfolio"
+              onClick={() => setIsMenuVisible(false)}
             >
               Portfolio
             </Link>
@@ -63,6 +65,7 @@ const Menu = () => {
               className="lg:block text-gray-100 text-xl lg:text-2xl no-underline md:inline-block md:mt-0 px-4"
               key="yhdeydenotto"
               to="/#yhteydenotto"
+              onClick={() => setIsMenuVisible(false)}
             >
               Otahan yhteyttä
             </Link>

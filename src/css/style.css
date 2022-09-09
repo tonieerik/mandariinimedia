@@ -6,6 +6,10 @@
 
 @import url("//fonts.googleapis.com/css2?family=Dosis&family=Titillium+Web:wght@200;400&display=swap");
 
+body {
+  background-color: #ffffff;
+}
+
 div {
   font-family: "Titillium web", sans-serif;
 }

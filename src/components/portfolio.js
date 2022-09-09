@@ -1,8 +1,71 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 const Content = () => {
   const breakpoints = useBreakpoint()
+
+  const data = useStaticQuery(graphql`
+    query {
+      duunitoriAnnaMuittariImage: file(
+        relativePath: { eq: "Duunitori-Anna-Muittari.webp" }
+      ) {
+        childImageSharp {
+          gatsbyImageData(quality: 90, layout: FULL_WIDTH)
+        }
+      }
+      kopiostoGogiImage: file(
+        relativePath: { eq: "Kopiosto-Constantinos-Mavromichalis-Gogi.webp" }
+      ) {
+        childImageSharp {
+          gatsbyImageData(quality: 90, layout: FULL_WIDTH)
+        }
+      }
+      tunnejamieliKisuImage: file(
+        relativePath: { eq: "Tunnejamieli-Kisu.webp" }
+      ) {
+        childImageSharp {
+          gatsbyImageData(quality: 90, layout: FULL_WIDTH)
+        }
+      }
+      duunitoriMonaKajanderImage: file(
+        relativePath: { eq: "Duunitori-Mona-Kajander.webp" }
+      ) {
+        childImageSharp {
+          gatsbyImageData(quality: 90, layout: FULL_WIDTH)
+        }
+      }
+      opBerttaHakkinenImage: file(
+        relativePath: { eq: "OP-Bertta-Hakkinen.webp" }
+      ) {
+        childImageSharp {
+          gatsbyImageData(quality: 90, layout: FULL_WIDTH)
+        }
+      }
+      kasvuopenNinaRautiainenImage: file(
+        relativePath: { eq: "Kasvuopen-Nina-Rautiainen.webp" }
+      ) {
+        childImageSharp {
+          gatsbyImageData(quality: 90, layout: FULL_WIDTH)
+        }
+      }
+      kasvuopenYrityskulttuuriImage: file(
+        relativePath: { eq: "Kasvuopen-yrityskulttuuri.webp" }
+      ) {
+        childImageSharp {
+          gatsbyImageData(quality: 90, layout: FULL_WIDTH)
+        }
+      }
+      pohjoisenpolutTommiLahtonenImage: file(
+        relativePath: { eq: "Pohjoisenpolut-Tommi-Lahtonen.webp" }
+      ) {
+        childImageSharp {
+          gatsbyImageData(quality: 90, layout: FULL_WIDTH)
+        }
+      }
+    }
+  `)
 
   return (
     <div
@@ -22,13 +85,11 @@ const Content = () => {
         </div>
         <div className="flex flex-col lg:flex-row">
           <div className="lg:mt-8 lg:ml-4 mb-4 lg:pl-8 lg:w-1/2">
-            {!breakpoints.md && (
-              <img
-                src="https://www.kopiosto.fi/app/uploads/2022/06/02155555/021-Kopiosto-Constantinos-Mavromichalis-Gogi.jpg"
-                alt="Constantinos Mavromichalis"
-                className="h-56"
-              />
-            )}
+            <GatsbyImage
+              image={data.kopiostoGogiImage.childImageSharp.gatsbyImageData}
+              alt="Constantinos Mavromichalis"
+              className="mb-4"
+            />
             <p className="mb-2 text-md font-bold">
               <a
                 className="underline"
@@ -49,13 +110,11 @@ const Content = () => {
             </p>
           </div>
           <div className="lg:mt-8 lg:ml-4 mb-4 lg:pl-8 lg:w-1/2">
-            {!breakpoints.md && (
-              <img
-                src="https://www.tunnejamieli.fi/wp-content/uploads/2021/11/Kisu-1280x640.jpg"
-                alt="Kisu"
-                className="h-56"
-              />
-            )}
+            <GatsbyImage
+              image={data.tunnejamieliKisuImage.childImageSharp.gatsbyImageData}
+              alt="Kisu"
+              className="mb-4"
+            />
             <p className="mb-2 text-md font-bold">
               <a
                 className="underline"
@@ -75,13 +134,13 @@ const Content = () => {
         </div>
         <div className="flex flex-col lg:flex-row">
           <div className="lg:mt-8 lg:ml-4 mb-4 lg:pl-8 lg:w-1/2">
-            {!breakpoints.md && (
-              <img
-                src="https://tyoelama-duunitori.imgix.net/wp-content/uploads/2022/05/credit_Jessica_Riskila%CC%88_Dreamy_Lapland_Visuals.jpeg?auto=format&crop=faces&fit=crop&h=1260&q=60&w=2400"
-                alt="Mona Kajander"
-                className="h-56"
-              />
-            )}
+            <GatsbyImage
+              image={
+                data.duunitoriMonaKajanderImage.childImageSharp.gatsbyImageData
+              }
+              alt="Mona Kajander"
+              className="mb-4"
+            />
             <p className="mb-2 text-md font-bold">
               <a
                 className="underline"
@@ -102,13 +161,13 @@ const Content = () => {
             </p>
           </div>
           <div className="lg:mt-8 lg:ml-4 mb-4 lg:pl-8 lg:w-1/2">
-            {!breakpoints.md && (
-              <img
-                src="https://tyoelama-duunitori.imgix.net/wp-content/uploads/2022/06/AnnaMuittari_1.jpg"
-                alt="Anna Muittari"
-                className="h-56"
-              />
-            )}
+            <GatsbyImage
+              image={
+                data.duunitoriAnnaMuittariImage.childImageSharp.gatsbyImageData
+              }
+              alt="Anna Muittari"
+              className="mb-4"
+            />
             <p className="mb-2 text-md font-bold">
               <a
                 className="underline"
@@ -132,13 +191,11 @@ const Content = () => {
         </div>
         <div className="flex flex-col lg:flex-row">
           <div className="lg:mt-8 lg:ml-4 mb-4 lg:pl-8 lg:w-1/2">
-            {!breakpoints.md && (
-              <img
-                src="https://www.op-media.fi/contentassets/567d36e81c874f1396c99e6b5d75abcf/rekki1_1600x900.jpg?width=1900&height=800&mode=crop&center=0.5,0.5"
-                alt="Bertta Häkkinen"
-                className="h-56"
-              />
-            )}
+            <GatsbyImage
+              image={data.opBerttaHakkinenImage.childImageSharp.gatsbyImageData}
+              alt="Bertta Häkkinen"
+              className="mb-4"
+            />
             <p className="mb-2 text-md font-bold">
               <a
                 className="underline"
@@ -158,13 +215,14 @@ const Content = () => {
             </p>
           </div>
           <div className="lg:mt-8 lg:ml-4 mb-4 lg:pl-8 lg:w-1/2">
-            {!breakpoints.md && (
-              <img
-                src="https://kasvuopen.fi/wp-content/uploads/2022/04/nina-rautiainen-business-jyvaskyla-2022-3-1600x1067.jpg"
-                alt="Nina Rautiainen"
-                className="h-56"
-              />
-            )}
+            <GatsbyImage
+              image={
+                data.kasvuopenNinaRautiainenImage.childImageSharp
+                  .gatsbyImageData
+              }
+              alt="Nina Rautiainen"
+              className="mb-4"
+            />
             <p className="mb-2 text-md font-bold">
               <a
                 className="underline"
@@ -185,13 +243,14 @@ const Content = () => {
         </div>
         <div className="flex flex-col lg:flex-row">
           <div className="lg:mt-8 lg:ml-4 mb-4 lg:pl-8 lg:w-1/2">
-            {!breakpoints.md && (
-              <img
-                src="https://kasvuopen.fi/wp-content/uploads/2020/03/DSC08240-1600x1067.jpg"
-                alt=""
-                className="h-56"
-              />
-            )}
+            <GatsbyImage
+              image={
+                data.kasvuopenYrityskulttuuriImage.childImageSharp
+                  .gatsbyImageData
+              }
+              alt="Yrityskulttuuri"
+              className="mb-4"
+            />
             <p className="mb-2 text-md font-bold">
               <a
                 className="underline"
@@ -211,13 +270,14 @@ const Content = () => {
             </p>
           </div>
           <div className="lg:mt-8 lg:ml-4 mb-4 lg:pl-8 lg:w-1/2">
-            {!breakpoints.md && (
-              <img
-                src="https://crop.kaleva.fi/WCRs-d3IbLLlN5k-Pc7jAoBkFZY=/2600x1464/smart/https%3A//lorien-media-prod.s3.amazonaws.com/images/archive/2022/07/06/2022.07.06.15.10.29_20210624-165856.jpg"
-                alt="Tommi Lahtonen"
-                className="h-56"
-              />
-            )}
+            <GatsbyImage
+              image={
+                data.pohjoisenpolutTommiLahtonenImage.childImageSharp
+                  .gatsbyImageData
+              }
+              alt="Tommi Lahtonen"
+              className="mb-4"
+            />
             <p className="mb-2 text-md font-bold">
               <a
                 className="underline"
