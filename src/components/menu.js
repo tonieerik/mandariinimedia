@@ -12,7 +12,13 @@ const Menu = () => {
     <header className="w-full h-16 bg-orange drop-shadow-lg">
       <div className="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
         <span className="text-white">
-          <img src={logo} alt="logo" className="w-32 m-2" />
+          <img
+            src={logo}
+            width="144"
+            height="73"
+            alt="logo"
+            className="w-32 m-2"
+          />
         </span>
 
         <div
