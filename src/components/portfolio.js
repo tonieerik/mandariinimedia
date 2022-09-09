@@ -75,16 +75,16 @@ const Content = () => {
     `}
     >
       <div
-        className={`bg-white ${breakpoints.md ? "px-8 py-8" : "px-24 py-16"}
+        className={`bg-white ${breakpoints.md ? "px-8 py-8" : "p-16"}
     `}
       >
         <h2 className="text-xl text-teal">Tutustu kirjoituksiini</h2>
-        <div className="p-8 pt-0">
+        <div className="pb-8">
           Portfoliooni olen listannut muutamia esimerkkejä erityyppisistä
           teksteistä, jotka on julkaistu verkossa.
         </div>
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:mt-8 lg:ml-4 mb-4 lg:pl-8 lg:w-1/2">
+          <div className="lg:mt-8 mb-4 lg:pl-8 lg:w-1/2">
             <GatsbyImage
               image={data.kopiostoGogiImage.childImageSharp.gatsbyImageData}
               alt="Constantinos Mavromichalis"
@@ -133,7 +133,7 @@ const Content = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:mt-8 lg:ml-4 mb-4 lg:pl-8 lg:w-1/2">
+          <div className="lg:mt-8 mb-4 lg:pl-8 lg:w-1/2">
             <GatsbyImage
               image={
                 data.duunitoriMonaKajanderImage.childImageSharp.gatsbyImageData
@@ -190,7 +190,7 @@ const Content = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:mt-8 lg:ml-4 mb-4 lg:pl-8 lg:w-1/2">
+          <div className="lg:mt-8 mb-4 lg:pl-8 lg:w-1/2">
             <GatsbyImage
               image={data.opBerttaHakkinenImage.childImageSharp.gatsbyImageData}
               alt="Bertta Häkkinen"
@@ -242,7 +242,7 @@ const Content = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row">
-          <div className="lg:mt-8 lg:ml-4 mb-4 lg:pl-8 lg:w-1/2">
+          <div className="lg:mt-8 mb-4 lg:pl-8 lg:w-1/2">
             <GatsbyImage
               image={
                 data.kasvuopenYrityskulttuuriImage.childImageSharp
