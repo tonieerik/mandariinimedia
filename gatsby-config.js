@@ -10,7 +10,6 @@ module.exports = {
     `gatsby-plugin-breakpoints`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-netlify`,
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
