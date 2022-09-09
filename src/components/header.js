@@ -4,6 +4,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 import BackgroundImage from "gatsby-background-image"
 import { convertToBgImage } from "gbimage-bridge"
+import parse from "html-react-parser"
 
 const Header = ({ headerText = null }) => {
   const breakpoints = useBreakpoint()
@@ -47,9 +48,13 @@ const Header = ({ headerText = null }) => {
               <strong>NELLI LEPPÄNEN</strong>
             </div>
             <div className="px-2 pb-2 text-sm leading-snug">
-              Viestinnän ammattilainen & freelancesisällöntuottaja,
-              <br />
-              jolla on kirjoittajan sydän ja ajattelijan mieli
+              {(headerText && parse(headerText)) || (
+                <div>
+                  Viestinnän ammattilainen & freelancesisällöntuottaja,
+                  <br />
+                  jolla on kirjoittajan sydän ja ajattelijan mieli
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -67,7 +72,7 @@ const Header = ({ headerText = null }) => {
               <strong>NELLI LEPPÄNEN</strong>
             </div>
             <div className="px-2 pb-2 text-sm leading-snug">
-              {headerText || (
+              {(headerText && parse(headerText)) || (
                 <div>
                   Viestinnän ammattilainen & freelancesisällöntuottaja,
                   <br />
@@ -92,7 +97,7 @@ const Header = ({ headerText = null }) => {
           <div className="text-4xl font-bold">NELLI LEPPÄNEN</div>
           <br />
           <div className="text-xl">
-            {headerText || (
+            {(headerText && parse(headerText)) || (
               <div>
                 Viestinnän ammattilainen & freelancesisällöntuottaja,
                 <br />

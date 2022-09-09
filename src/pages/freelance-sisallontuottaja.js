@@ -38,7 +38,8 @@ const recommendations = [
 
 const IndexPage = () => (
   <Layout
-    headerText="Freelancesisällöntuottaja ja viestinnän asiantuntija, 
+    headerText="Freelancesisällöntuottaja ja viestinnän asiantuntija,
+    <br /> 
   joka rakastaa kirjoittaa ja nauttii hyvistä tarinoista
   "
     noMenu

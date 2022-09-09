@@ -1,22 +1,30 @@
 import React from "react"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
-const Content = () => (
-  <div className="w-full bg-white px-8 flex flex-col">
-    <Content1 />
-    <Content2 />
-    <div className="p-8 pt-0 pb-16">
-      Viime aikoina olen syventynyt kirjoittaessani erityisesti työelämään,
-      yritysmaailmaan, vastuullisuuteen, kulttuurialaan, mielen hyvinvointiin
-      sekä luontoon ja retkeilyyn. Ei ole kuitenkaan olemassa aihetta, jota
-      ammattikirjoittaja ei ottaisi haltuun.{" "}
-      <a href="#yhteydenotto" className="font-bold text-teal hover:underline">
-        Kysy viestintäpalveluistani lisää tai pyydä suoraan tarjous
-      </a>
-      .
+const Content = () => {
+  const breakpoints = useBreakpoint()
+
+  return (
+    <div className="w-full bg-white px-8 flex flex-col">
+      <Content1 />
+      <Content2 />
+      <hr className={`${breakpoints.md ? "" : "ml-8"} mt-4`} />
+      <div className={`${breakpoints.md ? "pb-8" : "pl-8 pb-16"} pt-4`}>
+        Viime aikoina olen syventynyt kirjoittaessani erityisesti työelämään,
+        yritysmaailmaan, vastuullisuuteen, kulttuurialaan, mielen hyvinvointiin
+        sekä luontoon ja retkeilyyn. Ei ole kuitenkaan olemassa aihetta, jota
+        ammattikirjoittaja ei ottaisi haltuun.{" "}
+        <a
+          href="#yhteydenotto"
+          className="font-bold text-orange hover:underline"
+        >
+          Kysy viestintäpalveluistani lisää tai pyydä suoraan tarjous
+        </a>
+        .
+      </div>
     </div>
-  </div>
-)
+  )
+}
 
 const Content1 = () => {
   const breakpoints = useBreakpoint()

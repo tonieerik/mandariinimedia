@@ -8,12 +8,7 @@ const Content = () => {
   const [sent, setSent] = useState(false)
 
   const breakpoints = useBreakpoint()
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-  } = useForm()
+  const { register, handleSubmit, reset } = useForm()
 
   const clearForm = () => {
     reset()
@@ -61,7 +56,7 @@ const Content = () => {
           href="https://www.instagram.com/mandariinimedia"
           target="_blank"
           rel="noreferrer"
-          className="font-bold text-teal hover:underline"
+          className="font-bold text-orange hover:underline"
         >
           Instagramissa
         </a>{" "}
@@ -70,7 +65,7 @@ const Content = () => {
           href="https://www.linkedin.com/in/leppanen-nelli"
           target="_blank"
           rel="noreferrer"
-          className="font-bold text-teal hover:underline"
+          className="font-bold text-orange hover:underline"
         >
           LinkedInissä
         </a>

@@ -23,6 +23,7 @@ const Menu = () => {
         >
           <p className="md:hidden z-90 fixed top-2 right-5">
             <a
+              href="void(0)"
               className="text-right text-white text-4xl"
               onClick={() => setIsMenuVisible(!isMenuVisible)}
             >

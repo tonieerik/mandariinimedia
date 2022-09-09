@@ -3,12 +3,12 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 const FreelanceWhat = () => {
   const breakpoints = useBreakpoint()
-  const mx = breakpoints.md ? "mx-0 mb-12" : "mx-16 pb-24"
+  const mx = breakpoints.md ? "mx-0 mb-12" : "mx-16"
 
   return (
     <div className={`${mx} bg-white my-12 px-8 flex flex-col`}>
       <h2 className="text-teal text-xl font-bold">
-        Freelancekirjoittaja, jonka viestintä valloittaa
+        Ota avuksesi freelancer, jonka viestintä valloittaa
       </h2>
       <p>
         Tekstien maailmassa seikkailen tutulla ja rakkaalla maaperällä, sillä
@@ -25,11 +25,11 @@ const FreelanceWhat = () => {
         Oletpa sitten yrittäjä tai viestintätoimiston edustaja ja kaipaat
         osaavia apukäsiä viestintään, olen sinua varten. Tutustu tarkemmin
         Mandariinimedian{" "}
-        <a href="/" className="text-orange font-black underline">
+        <a href="/" className="text-orange font-bold hover:underline">
           viestintäpalveluihin
         </a>
         &nbsp; ja&nbsp;
-        <a href="/#portfolio" className="text-orange font-black underline">
+        <a href="/#portfolio" className="text-orange font-bold hover:underline">
           portfolioon
         </a>
         . Ota reippaasti yhteyttä, niin rupatellaan, miten voin olla avuksi

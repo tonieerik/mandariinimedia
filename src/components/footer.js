@@ -103,6 +103,7 @@ const Footer = () => {
       <div className="border-t border-white bg-white text-teal text-right px-4">
         Verkkosivut:{" "}
         <a
+          className="text-orange hover:underline"
           target="_blank"
           href="https://linkedin.com/in/toni-leppanen"
           rel="noreferrer"
@@ -111,8 +112,13 @@ const Footer = () => {
         </a>
         ,{" "}
         <nobr>
-          Valokuvat:{" "}
-          <a target="_blank" href="https://www.lkarlin.com/" rel="noreferrer">
+          valokuvat:{" "}
+          <a
+            className="text-orange hover:underline"
+            target="_blank"
+            href="https://www.lkarlin.com/"
+            rel="noreferrer"
+          >
             Laura Karlin / L. Karlin Creative
           </a>
         </nobr>
