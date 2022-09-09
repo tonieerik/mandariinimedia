@@ -45,7 +45,7 @@ const Menu = () => {
               key="kuka olen"
               to="/#kuka-olen"
             >
-              Tutustutaan!
+              Tutustutaan
             </Link>
           </p>
           <p>
@@ -94,7 +94,7 @@ const Menu = () => {
             key="kuka olen"
             to="/#kuka-olen"
           >
-            TUTUSTUTAAN!
+            TUTUSTUTAAN
           </Link>
           <Link
             className="lg:block text-gray-100 text-xl lg:text-2xl no-underline md:inline-block md:mt-0 px-4"

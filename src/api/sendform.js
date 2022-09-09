@@ -19,7 +19,7 @@ export default function formHandler(req, res) {
 
   sgMail.setApiKey(process.env.SENDGRID_API_KEY)
   const msg = {
-    to: "toni.leppanen@gmail.com", //"nelli@mandariinimedia.fi",
+    to: "nelli@mandariinimedia.fi",
     from: "Mandariinimedia <nelli@mandariinimedia.fi>", // Verified sender
     reply_to: htmlEntities(req.body.email),
     subject: "Mandariinimedia: viesti verkkosivuilta",

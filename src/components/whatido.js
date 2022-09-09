@@ -9,8 +9,11 @@ const Content = () => (
       Viime aikoina olen syventynyt kirjoittaessani erityisesti työelämään,
       yritysmaailmaan, vastuullisuuteen, kulttuurialaan, mielen hyvinvointiin
       sekä luontoon ja retkeilyyn. Ei ole kuitenkaan olemassa aihetta, jota
-      ammattikirjoittaja ei ottaisi haltuun. Kysy viestintäpalveluistani lisää
-      tai pyydä suoraan tarjous.
+      ammattikirjoittaja ei ottaisi haltuun.{" "}
+      <a href="#yhteydenotto" className="font-bold text-teal hover:underline">
+        Kysy viestintäpalveluistani lisää tai pyydä suoraan tarjous
+      </a>
+      .
     </div>
   </div>
 )

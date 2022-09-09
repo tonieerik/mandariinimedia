@@ -15,10 +15,10 @@ const Content = () => {
         className={`bg-white ${breakpoints.md ? "px-8 py-8" : "px-24 py-16"}
     `}
       >
-        <h2 className="text-xl text-teal">Tutustu kirjoituksiini:</h2>
+        <h2 className="text-xl text-teal">Tutustu kirjoituksiini</h2>
         <div className="p-8 pt-0">
-          Tutustu kirjoituksiini. Alle olen listannut muutamia esimerkkejä
-          erityyppisistä teksteistä, jotka on julkaistu verkossa.
+          Portfoliooni olen listannut muutamia esimerkkejä erityyppisistä
+          teksteistä, jotka on julkaistu verkossa.
         </div>
         <div className="flex flex-col lg:flex-row">
           <div className="lg:mt-8 lg:ml-4 mb-4 lg:pl-8 lg:w-1/2">

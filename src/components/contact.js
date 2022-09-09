@@ -48,7 +48,37 @@ const Content = () => {
         breakpoints.md ? "px-8 py-8" : "px-24 py-16"
       }`}
     >
-      <h2 className="text-xl text-teal">Otahan yhteyttä!</h2>
+      <div className="py-8 pt-0">
+        Toivottavasti pääsen puhaltamaan henkiin sinunkin tarinasi –
+        mahdollisimman aitona ja uniikkina. Sormeni odottavat jo malttamattomina
+        näppäimistöllä. Rupatellaan ihmeessä lisää, miten voin olla sinulle
+        avuksi. Voit myös pyytää suoraan tarjousta.
+      </div>
+      <div className="py-8 pt-0">
+        Laita vaikka saman tien sähköpostia tai pirauta puhelimitse. Tutustu
+        myös somekanaviini{" "}
+        <a
+          href="https://www.instagram.com/mandariinimedia"
+          target="_blank"
+          rel="noreferrer"
+          className="font-bold text-teal hover:underline"
+        >
+          Instagramissa
+        </a>{" "}
+        ja{" "}
+        <a
+          href="https://www.linkedin.com/in/leppanen-nelli"
+          target="_blank"
+          rel="noreferrer"
+          className="font-bold text-teal hover:underline"
+        >
+          LinkedInissä
+        </a>
+        . Jaan somessa kaikenmoisia ajatuksia kirjoittamisesta ja viestinnästä,
+        kielenkäytön merkityksellisyydestä sekä yrittäjyyden iloista.
+      </div>
+      <div className="py-8 pt-0">Kuullaan pian!</div>
+      <hr className="mt-8 mb-12 mx-4" />
       <form className="block">
         <div className={`${breakpoints.sm ? "" : "flex"} w-full`}>
           <div className={breakpoints.sm ? "" : "flex-grow mr-6"}>
@@ -125,7 +155,7 @@ const Mobile = () => (
 const Desktop = () => (
   <section className="bg-orange flex mx-0" id="yhteydenotto">
     <div className="self-center text-xl text-white whitespace-no-wrap transform -rotate-90 tracking-widest w-1/6">
-      OTAHAN YHTEYTTÄ!
+      OTAHAN YHTEYTTÄ
     </div>
     <Content />
   </section>

@@ -86,7 +86,7 @@ const Mobile = () => (
 const Desktop = () => (
   <section className="bg-orange flex mx-0" id="kuka-olen">
     <div className="self-center text-xl text-white whitespace-no-wrap transform -rotate-90 tracking-widest w-1/6">
-      TUTUSTUTAAN!
+      TUTUSTUTAAN
     </div>
     <Content />
   </section>
