@@ -51,25 +51,25 @@ const PrivacyPage = () => (
       </div>
       <div className="mt-4 text-gray-500">
         <h2 className="font-semibold">5. Keiden tietoja käsittelemme?</h2>
-        <p className="mt-2">
-          Käsittelemme tietojasi tämän tietosuojaselosteen mukaisesti, jos olet:
+        <p className="my-2">
+          Käsittelemme tietojasi tämän tietosuojaselosteen mukaisesti, jos olet
         </p>
         <ul className="list-disc ml-6">
-          <li className="leading-snug">asiakkaamme</li>
-          <li className="leading-snug">potentiaalinen asiakkaamme</li>
-          <li className="leading-snug">yhteistyökumppanimme.</li>
+          <li className="leading-snug mb-0">asiakkaamme</li>
+          <li className="leading-snug mb-0">potentiaalinen asiakkaamme</li>
+          <li className="leading-snug mb-0">yhteistyökumppanimme.</li>
         </ul>
       </div>
       <div className="mt-4 text-gray-500">
         <h2 className="font-semibold">6. Mitä tietoja käsittelemme?</h2>
-        <p className="mt-2">
+        <p className="my-2">
           Käsittelemme vain välttämättömiä henkilötietoja. Näitä tietoja ovat:
         </p>
         <ul className="list-disc ml-6">
-          <li className="leading-snug">nimi</li>
-          <li className="leading-snug">sähköpostiosoite</li>
-          <li className="leading-snug">puhelinnumero</li>
-          <li className="leading-snug">laskutustiedot.</li>
+          <li className="leading-snug mb-0">nimi</li>
+          <li className="leading-snug mb-0">sähköpostiosoite</li>
+          <li className="leading-snug mb-0">puhelinnumero</li>
+          <li className="leading-snug mb-0">laskutustiedot.</li>
         </ul>
       </div>
       <div className="mt-4 text-gray-500">
@@ -133,25 +133,25 @@ const PrivacyPage = () => (
           12. Rekisteröityjen oikeudet henkilötietojen käsittelyssä
         </h2>
 
-        <p className="mt-2">
+        <p className="my-2">
           Sinulla on seuraavat oikeudet, joiden käyttämistä koskevat pyynnöt
           tulee tehdä osoitteeseen nelli@mandariinimedia.fi:
         </p>
         <ul className="list-disc ml-6">
-          <li className="leading-snug">
+          <li className="leading-snug mb-0">
             oikeus tarkastaa ja saada kopio, mitä sinua koskevia tietoja
             henkilörekisteriin on tallennettu
           </li>
-          <li className="leading-snug">
+          <li className="leading-snug mb-0">
             oikeus pyytää sinua koskevien henkilötietojen korjaamista
           </li>
-          <li className="leading-snug">
+          <li className="leading-snug mb-0">
             oikeus vaatia sinua koskevien henkilötietojen poistamista
           </li>
-          <li className="leading-snug">
+          <li className="leading-snug mb-0">
             oikeus kieltää sinuun kohdistuva suoramarkkinointi
           </li>
-          <li className="leading-snug">
+          <li className="leading-snug mb-0">
             oikeus tehdä valitus valvontaviranomaiselle
           </li>
         </ul>
@@ -195,22 +195,22 @@ const PrivacyPage = () => (
           kiinnostavaa mainontaa tai sisältöä.
         </p>
         <p className="mt-2">
-          Mandariinimedia-fi-sivustolla käytämme Google Analytics
+          Mandariinimedia.fi-sivustolla käytämme Google Analytics
           -verkkoanalytiikkajärjestelmää.
         </p>
         <div className="mt-2">
-          Analyyttisten evästeiden avulla voimme
+          <p className="my-2">Analyyttisten evästeiden avulla voimme</p>
           <ul>
-            <li className="leading-snug">
+            <li className="leading-snug mb-0">
               saada tilastotietoja verkkosivustossa vierailuista, kuten
               käyttäjien lukumääristä, eri sivujen käytöstä, eri sivuilla
               vietetystä ajasta, käyttäjien selailutavoista
             </li>
-            <li className="leading-snug">
+            <li className="leading-snug mb-0">
               parantaa verkkosivustoa tarjoamalla räätälöityä sisältöä ja
               mukautettua tietoa
             </li>
-            <li className="leading-snug">
+            <li className="leading-snug mb-0">
               ymmärtää, miten ihmiset reagoivat esimerkiksi
               sähköpostikampanjoihimme (sähköpostin avaamisajankohta ja
               kestoaika jne.).
