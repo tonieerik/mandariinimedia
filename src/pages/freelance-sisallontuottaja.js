@@ -34,6 +34,21 @@ const recommendations = [
     title: "asiakkuuspäällikkö, Hube Helsinki",
     text: "Mandariinimedian Nelliltä tulee todella hyviä juttuja, joita ei juurikaan tarvitse editoida. Hän osaa kysyä haastateltavilta aina juuri oikeat kysymykset ja nostaa jutuissa esiin kiinnostavat yksityiskohdat. Nelli on hyvä toimittaja, jonka työnjälkeen ja aikataulutukseen voi aina luottaa.",
   },
+  {
+    name: "Paula Koivupalo",
+    title: "markkinointipäällikkö, Yritystehdas",
+    text: "Nellin teksteissä näkyy ammattimainen ote. Uudet aiheet hän ottaa joka kerta sujuvasti haltuun, ja lopputuloksena on selkeitä ja kiinnostavia artikkeleita. Yhteistyö on mutkatonta ja itseohjautuvaa. On ollut ilo tehdä Nellin kanssa yhteistyötä!",
+  },
+  {
+    name: "Sanna Virtanen",
+    title: "markkinointistrategi, CEO, Flumenia",
+    text: "Olemme tehneet Nellin kanssa yhteistyötä sisältömarkkinoinnin tarpeidemme kanssa. Sisällöt ovat vaihdelleet asiakas- ja osaajatarinoista aina haastaviin toimialakohtaisiin teksteihin. Olemme olleet erittäin tyytyväisiä Nellin ammattitaitoon, sisältöihin ja siihen, kuinka työt hoituvat ammattilaisen ottein aikataulussa. Voimme suositella!",
+  },
+  {
+    name: "Meri Nykänen",
+    title: "Päätoimittaja, Tunne & Mieli",
+    text: "Mandariinimedian Nelli kirjoittaa lehteemme säännöllisesti terveyteen ja mielen hyvinvointiin liittyviä tekstejä. Hän myös ideoi ja tarjoaa oivaltavia juttuideoita. Nelli on luotettava ammattilainen, joka pitää kiinni sovituista aikatauluista. Suosittelen!",
+  },
 ]
 
 const IndexPage = () => (
@@ -44,7 +59,10 @@ const IndexPage = () => (
   "
     noMenu
   >
-    <Seo title="Freelancesisällöntuottaja" />
+    <Seo
+      title="Freelancesisällöntuottaja"
+      description="Haluatko viestinnällä lisää näkyvyyttä, asiakkaita tai myyntiä? Ota avuksesi freelancesisällöntuottaja. Taion vaikuttavia tekstejä, joilla on merkitystä."
+    />
 
     <FreelanceIntro />
 

@@ -28,7 +28,6 @@ const Content = () => {
     })
       .then(res => res.json())
       .then(body => {
-        console.log(`Response from API:`, body)
         if (body === "OK") {
           setLoading(false)
           setSent(true)

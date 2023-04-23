@@ -26,25 +26,25 @@ const Content = () => {
         </h2>
         <ul className="multiline">
           <li>
-            Kaipaatko sisällöntuotantoa esimerkiksi sosiaalisen median kanaviin,
-            verkkosivuille tai uutiskirjeeseen? Eikö yrittäjän aika riitä
-            kaikkeen siihen markkinointiviestintään, jota haluaisit tehdä?
-            Keskity rauhassa ydinosaamiseesi ja ulkoista viestintä minulle,
-            ammattilaisen osaaviin käsiin.
+            Kaipaatko vaikuttavaa sisällöntuotantoa esimerkiksi sosiaalisen
+            median kanaviin, verkkosivuille tai uutiskirjeeseen? Eikö yrittäjän
+            aika riitä kaikkeen markkinointiviestintään, jota haluaisit tehdä?
+            Keskity rauhassa ydinosaamiseesi ja ulkoista sisältömarkkinointi
+            minulle, ammattilaisen osaaviin käsiin.
           </li>
           <li>
             Freelancesisällöntuottajana olen kustannustehokas vaihtoehto, sillä
             maksat vain tehdystä työstä – joko tuntihinnoitteluna tai
-            projektikohtaisesti. Samalla vältät ylimääräisen säädön, koska et
-            joudu maksamaan rekrytointikustannuksia ja muita perinteisiä
-            työntekijäkuluja.
+            projektikohtaisesti. Samalla vältät ylimääräisen säädön ja turhat
+            kulut, koska et joudu maksamaan ylimääräisiä rekrytointikustannuksia
+            ja muita perinteisiä työntekijäkuluja.
           </li>
           <li>
-            Freelancerista tulee yrityksellesi parhaimmillaan pitkäaikainen
+            Parhaimmillaan freelancerista tulee yrityksellesi pitkäaikainen
             luottokumppani, joka tuntee liiketoimintasi ytimen ja osaa viestiä
             siitä yhtä tuloksekkaasti kuin sinä itse tai omat työntekijäsi.
             Kokeneena sisällöntuottajana osaan loihtia tekstejä, jotka jättävät
-            jäljen.
+            muistijäljen ja saavat vastaanottajan toimimaan.
           </li>
         </ul>
       </div>
@@ -54,25 +54,25 @@ const Content = () => {
         </h2>
         <ul className="multiline">
           <li>
-            Meinaako jatkuva kiire painaa päälle? Eivätkö talon oman väen kädet
-            tahdo riittää kaikkeen? Ammattimaisena freelancesisällöntuottajana
-            hyppään sujuvasti minkä tahansa viestintätoimiston remmiin – vaikka
-            suoraan lennosta. Teen säännöllistä yhteistyötä erityyppisten
-            organisaatioiden kanssa.
+            Meinaako jatkuva kiire painaa päälle? Eivätkö yrityksesi
+            in-house-tiimin kädet riitä kaikkiin viestintäprojekteihin?
+            Kokeneena freelancesisällöntuottajana hyppään sujuvasti minkä
+            tahansa viestintätoimiston remmiin – vaikka suoraan lennosta. Teen
+            säännöllistä yhteistyötä eri alojen organisaatioiden kanssa.
           </li>
           <li>
-            Minulla on vankka kokemus sisällöntuottajan lisäksi myös
-            toimittajana, copywriterina ja kielenhuoltajana. Niinpä tunnen eri
-            tekstilajit, kielenkäytön tehokeinot ja viestintäkanavat kuin omat
-            taskuni. Olen viestinnän asiantuntija, jolla on kirjoittajan sydän
-            ja ajattelijan mieli.
+            Viestintäyrittäjänä minulla on vankka kokemus sisällöntuottajan
+            lisäksi myös toimittajana, copywriterina ja kielenhuoltajana. Niinpä
+            tunnen eri tekstilajit, kielenkäytön tehokeinot ja viestintäkanavat
+            kuin omat taskuni. Olen viestinnän asiantuntija, jonka syttyy
+            kirjoittamisesta ja tarinankerronnasta.
           </li>
           <li>
-            Kouluttaudun ja kehitän itseäni jatkuvasti.
-            Freelancesisällöntuottajana haluan pysyä aallonharjalla siitä, mitä
-            viestinnän kentällä tapahtuu ja mikä on ‘hot ja pop’ juuri nyt.
-            Ajantasaisesta osaamisestani on hyötyä kaikenlaisissa
-            sisällöntuotantoprojekteissa – you name it.
+            Kouluttaudun ja kehitän itseäni jatkuvasti kirjoittajana ja
+            viestinnän asiantuntijana. Freelancesisällöntuottajana haluan pysyä
+            aallonharjalla siitä, mitä viestinnän kentällä tapahtuu ja mitkä
+            asiat trendaavat juuri nyt. Ajantasaisesta osaamisestani on hyötyä
+            kaikenlaisissa sisällöntuotantoprojekteissa.
           </li>
         </ul>
       </div>

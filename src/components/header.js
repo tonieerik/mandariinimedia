@@ -94,7 +94,7 @@ const Header = ({ headerText = null }) => {
           />
         </div>
         <div className="flex flex-col justify-end w-1/2 pb-12">
-          <div className="text-4xl font-bold">NELLI LEPPÄNEN</div>
+          <div className="text-5xl font-bold">NELLI LEPPÄNEN</div>
           <br />
           <div className="text-xl">
             {(headerText && parse(headerText)) || (

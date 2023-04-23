@@ -8,23 +8,23 @@ const FreelanceWhat = () => {
   return (
     <div className={`${mx} bg-white my-12 px-8 flex flex-col`}>
       <h2 className="text-teal text-xl font-bold">
-        Ota avuksesi freelancer, jonka viestintä valloittaa
+        Ota avuksesi freelancer, joka tekee vaikuttavaa sisältöä
       </h2>
       <p>
         Tekstien maailmassa seikkailen tutulla ja rakkaalla maaperällä, sillä
         kirjoittaminen on leipälajini ja tarinankerronta intohimoni.
-        Freelancekirjoittajana solahdankin helposti niin sisällöntuottajan,
-        toimittajan kuin copywriterin haalareihin. Millaista freelanceria sitten
-        tarvitsetkin, tartun aina hommiin ammattilaisen ottein.
+        Freelancerina solahdan sujuvasti niin sisällöntuottajan, toimittajan,
+        copywriterin kuin kielenhuoltajan saappaisiin. Millaista freelanceria
+        sitten tarvitsetkin, tartun aina hommiin ammattilaisen ottein.
       </p>
       <span className="text-xl text-teal">
-        Freelancekirjoittajana teen muun muassa kaikkea tätä:
+        Freelancerina teen muun muassa kaikkea tätä:
       </span>
       <Content />
       <p className="mt-6">
         Oletpa sitten yrittäjä tai viestintätoimiston edustaja ja kaipaat
-        osaavia apukäsiä viestintään, olen sinua varten. Tutustu tarkemmin
-        Mandariinimedian{" "}
+        osaavaa viestintäalan freelanceria, olen täällä sinua varten. Tutustu
+        tarkemmin Mandariinimedian{" "}
         <a href="/" className="text-orange font-bold hover:underline">
           viestintäpalveluihin
         </a>
@@ -32,8 +32,7 @@ const FreelanceWhat = () => {
         <a href="/#portfolio" className="text-orange font-bold hover:underline">
           portfolioon
         </a>
-        . Ota reippaasti yhteyttä, niin rupatellaan, miten voin olla avuksi
-        freelancesisällöntuottajana.
+        . Ota reippaasti yhteyttä, niin jutellaan lisää.
       </p>
     </div>
   )
@@ -45,7 +44,7 @@ const Content = () => {
     <div
       className={`bg-white flex ${breakpoints.md ? "flex-col" : "flex-row"}`}
     >
-      <div className={`${breakpoints.md ? "mt-8 mb-2" : "mr-8 mt-8 w-1/3"}`}>
+      <div className={`${breakpoints.md ? "mt-8 mb-2" : "mr-8 mt-8 w-1/4"}`}>
         <h3 className="text-teal text-xl font-bold">Sisällöntuotanto</h3>
         <ul>
           <li>blogiartikkelit</li>
@@ -57,7 +56,7 @@ const Content = () => {
           <li>verkkosivutekstit</li>
         </ul>
       </div>
-      <div className={`${breakpoints.md ? "my-4" : "mt-8 w-1/3"}`}>
+      <div className={`${breakpoints.md ? "my-4" : "mt-8 w-1/4"}`}>
         <h3 className="text-teal text-xl font-bold">Toimitustyö</h3>
         <ul>
           <li>henkilöjutut</li>
@@ -69,7 +68,7 @@ const Content = () => {
           <li>raportit</li>
         </ul>
       </div>
-      <div className={`${breakpoints.md ? "my-4" : "mt-8 w-1/3"}`}>
+      <div className={`${breakpoints.md ? "my-4" : "mt-8 w-1/4"}`}>
         <h3 className="text-teal text-xl font-bold">Copywriting</h3>
         <ul>
           <li>mainokset</li>
@@ -78,6 +77,16 @@ const Content = () => {
           <li>laskeutumissivut</li>
           <li>markkinointimateriaalit</li>
           <li>tuote- ja palvelukuvaukset</li>
+        </ul>
+      </div>
+      <div className={`${breakpoints.md ? "my-4" : "mt-8 w-1/4"}`}>
+        <h3 className="text-teal text-xl font-bold">Kielenhuolto</h3>
+        <ul>
+          <li>tietokirjat</li>
+          <li>väitöskirjat</li>
+          <li>opinnäytetyöt</li>
+          <li>julkaisut</li>
+          <li>oppaat</li>
         </ul>
       </div>
     </div>

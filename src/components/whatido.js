@@ -13,14 +13,17 @@ const Content = () => {
         Viime aikoina olen syventynyt kirjoittaessani erityisesti työelämään,
         yritysmaailmaan, vastuullisuuteen, kulttuurialaan, mielen hyvinvointiin
         sekä luontoon ja retkeilyyn. Ei ole kuitenkaan olemassa aihetta, jota
-        ammattikirjoittaja ei ottaisi haltuun.{" "}
-        <a
-          href="#yhteydenotto"
-          className="font-bold text-orange hover:underline"
-        >
-          Kysy viestintäpalveluistani lisää tai pyydä suoraan tarjous
-        </a>
-        .
+        ammattikirjoittaja ei ottaisi haltuun.
+        <div className="mt-6 mb-2">
+          <a
+            href="#yhteydenotto"
+            className="font-bold text-orange hover:underline"
+          >
+            <button className="bg-orange text-white px-4 py-2 rounded opacity-80 hover:opacity-100 hover:cursor-pointer">
+              Kysy lisää palveluistani tai pyydä tarjous
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   )
