@@ -22,7 +22,7 @@ const Content = () => {
         breakpoints.md ? "px-8 py-8" : "flex px-24 py-16"
       }`}
     >
-      <div className={`mr-8 ${breakpoints.l ? "basis-1/2" : "basis-2/3"}`}>
+      <div className={`mr-8 ${breakpoints.lg ? "basis-1/2" : "basis-2/3"}`}>
         <h2 className="text-teal text-xl font-bold">Nelli tässä moi!</h2>
 
         <p>
