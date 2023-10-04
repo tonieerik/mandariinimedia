@@ -8,22 +8,22 @@ const Content = () => {
 
   const data = useStaticQuery(graphql`
     query {
-      duunitoriAnnaMuittariImage: file(
-        relativePath: { eq: "Duunitori-Anna-Muittari.webp" }
+      duunitoriDakotaRobinImage: file(
+        relativePath: { eq: "Duunitori-Dakota-Robin.webp" }
       ) {
         childImageSharp {
           gatsbyImageData(quality: 90, layout: FULL_WIDTH)
         }
       }
-      kopiostoGogiImage: file(
-        relativePath: { eq: "Kopiosto-Constantinos-Mavromichalis-Gogi.webp" }
+      kopiostoSariAaltonenImage: file(
+        relativePath: { eq: "Kopiosto-Sari-Aaltonen.webp" }
       ) {
         childImageSharp {
           gatsbyImageData(quality: 90, layout: FULL_WIDTH)
         }
       }
-      tunnejamieliKisuImage: file(
-        relativePath: { eq: "Tunnejamieli-Kisu.webp" }
+      tunnejamieliUnettomuusImage: file(
+        relativePath: { eq: "Tunnejamieli-unettomuus.webp" }
       ) {
         childImageSharp {
           gatsbyImageData(quality: 90, layout: FULL_WIDTH)
@@ -57,8 +57,8 @@ const Content = () => {
           gatsbyImageData(quality: 90, layout: FULL_WIDTH)
         }
       }
-      pohjoisenpolutTommiLahtonenImage: file(
-        relativePath: { eq: "Pohjoisenpolut-Tommi-Lahtonen.webp" }
+      yritystehdasOonaTarvainenJaAnnaFagelImage: file(
+        relativePath: { eq: "Yritystehdas-Oona-Tarvainen-ja-Anna-Fagel.webp" }
       ) {
         childImageSharp {
           gatsbyImageData(quality: 90, layout: FULL_WIDTH)
@@ -81,54 +81,60 @@ const Content = () => {
         <h2 className="text-xl text-teal">Tutustu kirjoituksiini</h2>
         <div className="pb-8">
           Portfoliooni olen listannut muutamia esimerkkejä erityyppisistä
-          teksteistä, jotka on julkaistu verkossa.
+          teksteistä, jotka on julkaistu verkossa ja jotka ovat avoimesti
+          kaikkien luettavissa.
         </div>
         <div className="flex flex-col lg:flex-row">
           <div className="lg:mt-8 mb-4 lg:pl-8 lg:w-1/2">
             <GatsbyImage
-              image={data.kopiostoGogiImage.childImageSharp.gatsbyImageData}
-              alt="Constantinos Mavromichalis"
+              image={
+                data.kopiostoSariAaltonenImage.childImageSharp.gatsbyImageData
+              }
+              alt="Sari Aaltonen"
               className="mb-4"
             />
             <p className="mb-2 text-md font-bold">
               <a
                 className="underline"
-                href="https://www.kopiosto.fi/kopiosto/viihteen-leikkikentilla-saa-heittaytya-luovuuden-vietavaksi/"
+                href="https://www.kopiosto.fi/kopiosto/elokuvaajalle-maailma-sakenoi-kameran-linssin-lapi/"
                 target="_blank"
                 rel="noreferrer"
               >
-                Kopiosto: Viihteen leikkikentillä saa heittäytyä luovuuden
-                vietäväksi
+                Kopiosto: Elokuvaajalle maailma säkenöi kameran linkkin läpi
               </a>
             </p>
             <p className="text-sm">
-              Vapaus tehdä omannäköistä viihdettä pitää tv-toimittaja, juontaja
-              ja sisällöntuottaja Constantinos ”Gogi” Mavromichalisin mielen
-              virkeänä. Niinpä hän on jatkuvasti ideoimassa ja luomassa uutta.
-              Parhaat toteutukset syntyvät aitojen tarinoiden ja valloittavan
-              huumorin liitosta.
+              Tarinat ovat kiehtoneet elokuvaaja Sari Aaltosta pienestä pitäen.
+              Nyt hän haluaa elokuvan keinoin herättää tunteita, haastaa
+              ajattelemaan – ja saada jopa ällistymään. Aaltoselle elokuvaaminen
+              ei ole mikä tahansa ammatti vaan tapa olla olemassa.
             </p>
           </div>
           <div className="lg:mt-8 lg:ml-4 mb-4 lg:pl-8 lg:w-1/2">
             <GatsbyImage
-              image={data.tunnejamieliKisuImage.childImageSharp.gatsbyImageData}
-              alt="Kisu"
+              image={
+                data.tunnejamieliUnettomuusImage.childImageSharp.gatsbyImageData
+              }
+              alt="Unettomuus"
               className="mb-4"
             />
             <p className="mb-2 text-md font-bold">
               <a
                 className="underline"
-                href="https://www.tunnejamieli.fi/2021/11/16/uni-ja-arkiset-teot-huoltavat-aivoja/"
+                href="https://www.tunnejamieli.fi/2023/08/29/univaje-vaikuttaa-monella-tavalla-mielenterveyteen-siksi-apua-kannattaa-hakea-ajoissa/"
                 target="_blank"
                 rel="noreferrer"
               >
-                Tunne &amp; Mieli: Uni ja arkiset teot huoltavat aivoja
+                Tunne &amp; Mieli: Univaje vaikuttaa monella tavalla
+                mielenterveyteen – siksi unettomuuteen kannattaa hakea apua
+                ajoissa
               </a>
             </p>
             <p className="text-sm">
-              Aivotutkija Kiti Müller vakuuttaa, että jokainen voi pitää huolta
-              päänuppinsa terveydestä. Arkisetkin teot lisäävät virkeitä työ- ja
-              elinvuosia.
+              Uni on puskuri, joka auttaa ihmistä jaksamaan läpi hankalista
+              tilanteista sekä palautumaan niistä. Psykologian tutkijatohtori
+              Liisa Kuulan mukaan hyvät yöunet vaikuttavat suoraan
+              mielenterveyteen.
             </p>
           </div>
         </div>
@@ -163,29 +169,29 @@ const Content = () => {
           <div className="lg:mt-8 lg:ml-4 mb-4 lg:pl-8 lg:w-1/2">
             <GatsbyImage
               image={
-                data.duunitoriAnnaMuittariImage.childImageSharp.gatsbyImageData
+                data.duunitoriDakotaRobinImage.childImageSharp.gatsbyImageData
               }
-              alt="Anna Muittari"
+              alt="Dakota Robin"
               className="mb-4"
             />
             <p className="mb-2 text-md font-bold">
               <a
                 className="underline"
-                href="https://duunitori.fi/tyoelama/alanvaihtajan-tarina-poliisista-varhaiskasvatuksen-opettajaksi"
+                href="https://duunitori.fi/tyoelama/dakota-robin-monimuotoisuus"
                 target="_blank"
                 rel="noreferrer"
               >
-                Duunitori: Alanvaihto muutti Annan elämän kertaheitolla &ndash;
-                rohkea loikka poliisista päiväkotiin kannatti: ”Onneksi
-                uskalsin”
+                Duunitori: Dakota Robin on kohdannut urallaan syrjintää ja
+                naureskelua – nyt hän tekee töitä sen eteen, ettei kukaan kokisi
+                samaa
               </a>
             </p>
             <p className="text-sm">
-              Joskus elämässä täytyy repäistä, eikä jahkailla loputtomiin. Anna
-              Muittari muutti Jyväskylästä Saariselälle ja vaihtoi poliisin
-              viran varhaiskasvatuksen opettajan arkeen. Nyt hän nauttii
-              työstään pohjoisen luonnon ympäröimänä, vaikka aluksi
-              alanvaihdossa ei tuntunut olevan lainkaan järkeä.
+              Jokainen työyhteisö, jossa on ihmisiä, on automaattisesti
+              monimuotoinen. Ihmisoikeuskouluttaja ja DEI-asiantuntija Dakota
+              Robin tietää tämän paremmin kuin hyvin. Hän on itse oppinut
+              luovimaan työelämässä suomalais-turkkilaisena transmiehenä, jolla
+              on vaikea lukihäiriö.
             </p>
           </div>
         </div>
@@ -272,26 +278,29 @@ const Content = () => {
           <div className="lg:mt-8 lg:ml-4 mb-4 lg:pl-8 lg:w-1/2">
             <GatsbyImage
               image={
-                data.pohjoisenpolutTommiLahtonenImage.childImageSharp
+                data.yritystehdasOonaTarvainenJaAnnaFagelImage.childImageSharp
                   .gatsbyImageData
               }
-              alt="Tommi Lahtonen"
+              alt="Oona Tarvainen ja Anna Fågel"
               className="mb-4"
             />
             <p className="mb-2 text-md font-bold">
               <a
                 className="underline"
-                href="https://www.pohjoisenpolut.fi/suomen-kuuluisin-pitka-vaellusreitti-on-jo-osin-ka/4748166"
+                href="https://yritystehdas.fi/blogi/opiskelukavereista-bisneskumppaneiksi-valmennuksesta-oppia-yrittajyyteen "
                 target="_blank"
                 rel="noreferrer"
               >
-                Pohjoisen Polut: UKK-reitti kaipaa pelastusta
+                Yritystehdas: Opiskelukavereista bisneskumppaneiksi –
+                valmennuksesta oppia yrittäjyyteen
               </a>
             </p>
             <p className="text-sm">
-              Tommi Lahtonen kulki jalkaisin Suomi-neidon helmoilta päälaelle
-              saakka. Hän uskoo, että pitkille reiteille olisi kysyntää, ja
-              siksi unohdettu UKK-reitti pitäisi herättää henkiin.
+              Korkeakouluopinnot ja työnteon voi yhdistää saumattomasti, kun
+              perustaa oman yrityksen jo opiskeluaikana. Valmistuttuaan Anna
+              Fågel ja Oona Tarvainen hyppäsivät suoraan täysipäiväisiksi
+              yrittäjiksi. Yrittäjävalmennus tuki kaksikkoa yrittäjyyden
+              alkutaipaleella.
             </p>
           </div>
         </div>
