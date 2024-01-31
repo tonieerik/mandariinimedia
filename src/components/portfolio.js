@@ -100,7 +100,7 @@ const Content = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Kopiosto: Elokuvaajalle maailma säkenöi kameran linkkin läpi
+                Kopiosto: Elokuvaajalle maailma säkenöi kameran linssin läpi
               </a>
             </p>
             <p className="text-sm">
